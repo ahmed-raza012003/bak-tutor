@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BAK Tutors Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- jQuery (required by Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+
+  </head>
+  <body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar text-end px-5 py-2">
+      <!-- <span class="me-3"><i class="bi bi-telephone-fill"></i> 07572505997</span>
+      <span><i class="bi bi-telephone-fill"></i> 01245201083</span> -->
+      <div class="contact-wrapper">
+        <div class="contact-item">
+          <span class="phone-icon-circle"><i class="bi bi-whatsapp"></i></span>
+          <span>07572505997</span>
+        </div>
+        <div class="contact-item">
+          <span class="phone-icon-circle"
+            ><i class="bi bi-telephone-fill"></i
+          ></span>
+          <span>01245201083</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center w-100 justify-content-end">
+          <div
+            class="d-inline-block px-2 py-1 rounded-3 text-start me-2"
+            style="font-size: 13px; line-height: 1.2; border: 1px solid black"
+          >
+            <div class="d-flex align-items-center">
+              <img src="google.png" width="18" height="18" class="me-2" />
+              <div>
+                <div>
+                  <strong>4.9</strong> <span style="color: #ff9900">★★★★★</span>
+                </div>
+                <small>Parent Reviews</small>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-nav2 me-2 py-2">
+            <i class="bi bi-person-plus me-2"></i> Register as a student
+          </button>
+          <button class="btn btn-nav2 me-2 py-2">
+            <i class="bi bi-search me-2"></i> Request a Tutor
+          </button>
+          <button class="btn btn-nav2 me-2 py-2">
+            <i class="bi bi-person me-2"></i> Become a Tutor
+          </button>
+          <div class="dropdown">
+            <button
+              class="btn btn-signin dropdown-toggle py-2"
+              type="button"
+              data-bs-toggle="dropdown"
+            >
+              <i class="bi bi-key-fill me-2"></i> Sign In
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Student</a></li>
+              <li><a class="dropdown-item" href="#">Tutor</a></li>
+              <li><a class="dropdown-item" href="#">Admin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Third Navigation -->
+    <nav
+      class="navbar navbar-expand-lg bg-white border-top shadow-sm py-2 px-5"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Logo.png"
+            alt="BAK Tutors Hub"
+            style="width: 100px; height: 100px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">BOOK STUDENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">JOIN OUR TEAM</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >RESOURCES</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Resource 1</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >SUBJECTS</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Math</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FIND A TUTOR</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >OUR TEAM</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Team Member</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-hero position-relative text-white text-center py-5">
+      <!-- Overlay -->
+      <div class="bg-overlay"></div>
+
+      <!-- Top Left Blue Blob -->
+      <div class="accent-shape blue-blob"></div>
+
+      <!-- Bottom Right Yellow Blob -->
+      <div class="accent-shape yellow-blob"></div>
+
+      <div class="container py-5 position-relative" style="margin-top: 70px;">
+        <h1 class="fw-bold mt-5 mb-4 display-10 mx-auto">
+          Find <span class="text-orange">Online And In-Person</span> Tutoring
+          Students
+        </h1>
+
+        <!-- Form Section -->
+        <div class="card-box shadow mx-auto">
+          <div class="corner-left"></div>
+          <div class="corner-right"></div>
+
+          <div
+            class="d-flex justify-content-center mb-2 gap-5 position-relative z-2"
+          >
+            <button class="tab-btn active-btn">In-Person</button>
+            <button class="tab-btn">Online</button>
+          </div>
+
+          <form
+            class="row g-3 align-items-center justify-content-center position-relative z-2"
+          >
+            <div class="col-12 col-md-3 col-sm-3">
+              <select class="form-select" required>
+                <option value="" disabled selected>Subject</option>
+                <option value="Math">Math</option>
+                <option value="English">English</option>
+                <option value="Science">Science</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-3 col-sm-3">
+              <select class="form-select" required>
+                <option value="" disabled selected>Teaching Level</option>
+                <option value="Primary">Primary</option>
+                <option value="Secondary">Secondary</option>
+                <option value="GCSE">GCSE</option>
+                <option value="A-Level">A-Level</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-3 col-sm-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Post Code"
+                required
+              />
+            </div>
+            <div class="col-12 col-md-3 col-sm-3">
+              <button
+                type="submit"
+                class="btn btn-warning text-white w-100 py-2"
+              >
+                Book Now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subjects Carousel Section -->
+    <div class="container-fluid mt-5 mb-5">
+      <div class="slider-container">
+        <div class="subjects-slider">
+          <!-- Mathematics Card -->
+          <div class="subject-card">
+            <div class="card-content1">
+              <div class="card-icon mathematics">
+                <i class="fas fa-calculator fa-2x"></i>
+              </div>
+              <div class="card-text">
+                <h5 class="card-title">Mathematics</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- English Language Card -->
+          <div class="subject-card">
+            <div class="card-content1">
+              <div class="card-icon english">
+                <i class="fas fa-book-open fa-2x"></i>
+              </div>
+              <div class="card-text">
+                <h5 class="card-title">English Language</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Biology Card -->
+          <div class="subject-card">
+            <div class="card-content1">
+              <div class="card-icon biology">
+                <i class="fas fa-dna fa-2x"></i>
+              </div>
+              <div class="card-text">
+                <h5 class="card-title">Biology</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Physics Card -->
+          <div class="subject-card">
+            <div class="card-content1">
+              <div class="card-icon physics">
+                <i class="fas fa-atom fa-2x"></i>
+              </div>
+              <div class="card-text">
+                <h5 class="card-title">Physics</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Geography Card -->
+          <div class="subject-card">
+            <div class="card-content1">
+              <div class="card-icon geography">
+                <i class="fas fa-globe-americas fa-2x"></i>
+              </div>
+              <div class="card-text">
+                <h5 class="card-title">Geography</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chemistry Card -->
+          <div class="subject-card">
+            <div class="card-content1">
+              <div class="card-icon chemistry">
+                <i class="fas fa-flask fa-2x"></i>
+              </div>
+              <div class="card-text">
+                <h5 class="card-title">Chemistry</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tutor On-Boarding Process Section -->
+
+    <section class="tutor-onboarding py-5">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center mb-2 mt-4">
+            Tutor On-Boarding <span style="color: #ff9900">Process</span>
+          </h2>
+          <p class="text-center mb-5 text-muted">
+            Are you a tutor looking for tutoring students? Do you have
+            challenges in finding students to teach?
+          </p>
+          <p class="text-center mt-1">
+            _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- First Card -->
+          <div class="col-12">
+            <div class="card">
+              <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-6 text-center">
+                  <div
+                    class="mx-auto"
+                    style="
+                      border: 1px solid orange;
+                      border-radius: 30px;
+                      padding: 2px;
+                      position: relative;
+                      background-color: #f9f9f900;
+                      max-width: 100%;
+                    "
+                  >
+                    <img
+                      src="registernow.png"
+                      alt="Register Now"
+                      style="
+                        margin-top: -20px;
+                        border-radius: 30px;
+                        padding: 5px;
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card-content p-3">
+                    <h4>Register With Us By Clicking The Link Below!</h4>
+                    <p>
+                      Register now to start teaching. You can search for
+                      available students in your Subject area in the student
+                      register on this platform.
+                      <span style="color: #162a72; font-weight: 700"
+                        ><i
+                          >Create an attractive profile using the link below:</i
+                        >
+                      </span>
+                    </p>
+                    <p
+                      style="
+                        border-left: 4px solid #3b5998;
+                        padding-left: 10px;
+                        color: #555;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                          sans-serif;
+                        font-size: 15px;
+                        line-height: 1.6;
+                      "
+                    >
+                      Bio, Educational Background, Teaching Experience, Subject
+                      Expertise, Teaching Style, Availability, Rates & Payment,
+                      Contact information, Testimonials or Reviews etc.
+                    </p>
+                    <a href="#" class="btn">
+                      <i class="bi bi-person-plus me-2"></i>Join Our Team
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Card -->
+          <div class="col-12 mt-4">
+            <div class="card">
+              <div
+                class="row g-0 align-items-center flex-column-reverse flex-md-row-reverse"
+              >
+                <div class="col-12 col-md-6 text-center">
+                  <div
+                    class="mx-auto"
+                    style="
+                      border: 1px solid orange;
+                      border-radius: 30px;
+                      padding: 2px;
+                      position: relative;
+                      background-color: #f9f9f900;
+                      max-width: 100%;
+                    "
+                  >
+                    <img
+                      src="tp2.jpg"
+                      alt="Register Now"
+                      style="
+                        margin-top: -20px;
+                        border-radius: 30px;
+                        padding: 5px;
+                        width: 100%;
+                        height: 350px;
+                        object-fit: cover;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card-content p-3">
+                    <h4>
+                      We Are Here To Help! Please Get In Touch With Us Now
+                    </h4>
+                    <p>
+                      Tutor HUB is a platform that connects tutors with students
+                      seeking a flexible and cost-effective solution for the
+                      education.
+                    </p>
+                    <p>
+                      This will be beneficial for both tutors and students, as
+                      it provides a streamlined way to match your educators with
+                      students seeking your services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Card -->
+          <div class="col-12 mt-4">
+            <div class="card">
+              <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-6 text-center">
+                  <div
+                    class="mx-auto"
+                    style="
+                      border: 1px solid orange;
+                      border-radius: 30px;
+                      padding: 2px;
+                      position: relative;
+                      background-color: #f9f9f900;
+                      max-width: 100%;
+                    "
+                  >
+                    <img
+                      src="tp3.jpg"
+                      alt="Register Now"
+                      style="
+                        margin-top: -20px;
+                        border-radius: 30px;
+                        padding: 5px;
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                      "
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card-content p-3">
+                    <h4>Enquiries Direct Into Your Email</h4>
+                    <p>
+                      Our team will send your enquiries directly into your email
+                      account or WhatsApp number for you to book and start
+                      teaching. We strongly advise that you contact these leads
+                      immediately you receive them to maximise the chance of
+                      winning them as they will be contacted by several other
+                      tutors.
+                    </p>
+
+                    <p
+                      style="
+                        border-left: 4px solid #3b5998;
+                        padding-left: 10px;
+                        color: #555;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+                          sans-serif;
+                        font-size: 15px;
+                        line-height: 1.6;
+                      "
+                    >
+                      Remember, no commission is charged on the fees paid by the
+                      client. You keep all the money yourself.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Carousel Section with Images -->
+    <section class="new-carousel-section">
+      <div class="container">
+        <!-- Arrow Image (Hidden on sm & md) -->
+        <img
+          src="arrow.png"
+          alt=""
+          width="300px"
+          class="d-none d-lg-block"
+          style="position: absolute; left: 0px"
+        />
+
+        <!-- Star Image (Hidden on sm & md) -->
+        <img
+          src="star.png"
+          alt=""
+          width="60px"
+          class="d-none d-lg-block"
+          style="position: absolute; right: 100px"
+        />
+
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+          "
+        >
+          <h2 style="margin-top: 40px; margin-bottom: 20px; text-align: center">
+            Our Popular <span style="color: #ff9900">Subjects</span>
+          </h2>
+        </div>
+
+        <div class="tuition-slider-container">
+          <div class="tuition-slider">
+            <!-- English Tuition Card -->
+            <div class="tuition-card">
+              <div class="tuition-image-container">
+                <img
+                  src="eng.jpg"
+                  alt="English Tuition"
+                  class="tuition-image"
+                />
+              </div>
+              <div class="tuition-content">
+                <h5 class="tuition-title">English Tuition</h5>
+                <div class="tuition-arrow"></div>
+              </div>
+            </div>
+
+            <!-- Physics Tuition Card -->
+            <div class="tuition-card">
+              <div class="tuition-image-container">
+                <img
+                  src="phy.jpg"
+                  alt="Physics Tuition"
+                  class="tuition-image"
+                />
+              </div>
+              <div class="tuition-content">
+                <h5 class="tuition-title">Physics Tuition</h5>
+                <div class="tuition-arrow"></div>
+              </div>
+            </div>
+
+            <!-- Chemistry Tuition Card -->
+            <div class="tuition-card">
+              <div class="tuition-image-container">
+                <img
+                  src="chem.jpg"
+                  alt="Chemistry Tuition"
+                  class="tuition-image"
+                />
+              </div>
+              <div class="tuition-content">
+                <h5 class="tuition-title">Chemistry Tuition</h5>
+                <div class="tuition-arrow"></div>
+              </div>
+            </div>
+
+            <!-- Economics Tuition Card -->
+            <div class="tuition-card">
+              <div class="tuition-image-container">
+                <img
+                  src="eco.jpg"
+                  alt="Economics Tuition"
+                  class="tuition-image"
+                />
+              </div>
+              <div class="tuition-content">
+                <h5 class="tuition-title">Economics Tuition</h5>
+                <div class="tuition-arrow"></div>
+              </div>
+            </div>
+
+            <!-- Mathematics Tuition Card -->
+            <div class="tuition-card">
+              <div class="tuition-image-container">
+                <img
+                  src="math.jpg"
+                  alt="Mathematics Tuition"
+                  class="tuition-image"
+                />
+              </div>
+              <div class="tuition-content">
+                <h5 class="tuition-title">Mathematics Tuition</h5>
+                <div class="tuition-arrow"></div>
+              </div>
+            </div>
+
+            <!-- Biology Tuition Card -->
+            <!-- <div class="tuition-card">
+                    <div class="tuition-image-container">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=200&fit=crop&crop=center" alt="Biology Tuition" class="tuition-image">
+                    </div>
+                    <div class="tuition-content">
+                        <h5 class="tuition-title">Biology Tuition</h5>
+                        <div class="tuition-arrow"></div>
+                    </div>
+                </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us position-relative">
+      <div class="blue-overlay"></div>
+
+      <div class="container position-relative z-2 text-white text-center">
+        <div
+          class="container text-center d-flex flex-column justify-content-center align-items-center"
+        >
+          <h2 class="section-title mb-1 text-white">
+            Why <span class="highlight-orange">Choose Us</span> ?
+          </h2>
+          <p class="lead mb-1">
+            Our tutors are fully qualified teachers, experienced and understand
+            the UK curriculum.
+          </p>
+
+          <p class="lead mb-5">
+            We tailor each session to your child's pace, strengths, and goals—no
+            one-size-fits-all lessons here.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center mt-5">
+          <!-- Card 1 -->
+          <div
+            class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center"
+          >
+            <div class="card-box2 text-center p-4 w-100">
+              <div class="icon-circle mx-auto mb-3">
+                <img src="card1.png" alt="Qualified Teachers" />
+              </div>
+              <h4 class="card-title">Qualified Teachers</h4>
+              <p class="card-desc">
+                We support every level of the education system in unlocking true
+                potential and achieving academic success.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center mid-card"
+          >
+            <div class="card-box2 text-center p-4 w-100">
+              <div class="icon-circle mx-auto mb-3">
+                <img src="card2.png" alt="Matching Service" />
+              </div>
+              <h4 class="card-title">Tutor–Pupil Matching Service</h4>
+              <p class="card-desc">
+                Simply share your requirements with Science Clinic, and we will
+                connect you with the right tutor for your child. If you are not
+                satisfied, we will assign an alternative tutor at any time.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center"
+          >
+            <div class="card-box2 text-center p-4 w-100">
+              <div class="icon-circle mx-auto mb-3">
+                <img src="card3.png" alt="Customer Support" />
+              </div>
+              <h4 class="card-title">Personal Customer Support</h4>
+              <p class="card-desc">
+                With years of experience in education, Science Clinic offers a
+                personal touch to customer service, allowing you to contact us
+                anytime to discuss any aspect of your child’s education.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Online Lessons Section -->
+
+    <section class="online-lessons mt-4">
+      <h2 class="section-title1"><span>Online</span> Lessons</h2>
+      <p class="subjects">
+        Maths, English, Chemistry, Biology, Physics, Economics, Finance,
+        Business Studies
+      </p>
+
+      <img
+        src="ellipse.png"
+        alt=""
+        style="width: 30px; position: absolute; right: 0px"
+      />
+
+      <div class="lessons-slider-container">
+        <div class="lessons-slider">
+          <!-- Card 1 -->
+          <div class="lesson-card">
+            <img src="math.jpg" alt="Mathematics" />
+            <div class="lesson-info">
+              <h5>Mathematics Lessons</h5>
+              <p class="price">£20 - £33 / Hour</p>
+              <p class="desc">GCSE, A-level, KS3, KS2 & KS1</p>
+              <div class="rating">
+                <span>★★★★★</span><span class="count">(1,424)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="lesson-card">
+            <img src="eng.jpg" alt="English" />
+            <div class="lesson-info">
+              <h5>English Lessons</h5>
+              <p class="price">£18 - £30 / Hour</p>
+              <p class="desc">Grammar, Literature, Writing Skills</p>
+              <div class="rating">
+                <span>★★★★★</span><span class="count">(1,080)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="lesson-card">
+            <img src="chem.jpg" alt="Chemistry" />
+            <div class="lesson-info">
+              <h5>Chemistry Lessons</h5>
+              <p class="price">£22 - £35 / Hour</p>
+              <p class="desc">GCSE, A-Level, Organic & Inorganic</p>
+              <div class="rating">
+                <span>★★★★★</span><span class="count">(950)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="lesson-card">
+            <img src="bio.jpg" alt="Biology" />
+            <div class="lesson-info">
+              <h5>Biology Lessons</h5>
+              <p class="price">£20 - £32 / Hour</p>
+              <p class="desc">Human Biology, Zoology, Genetics</p>
+              <div class="rating">
+                <span>★★★★★</span><span class="count">(890)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="lesson-card">
+            <img src="phy.jpg" alt="Physics" />
+            <div class="lesson-info">
+              <h5>Physics Lessons</h5>
+              <p class="price">£23 - £37 / Hour</p>
+              <p class="desc">Mechanics, Electricity, Waves</p>
+              <div class="rating">
+                <span>★★★★★</span><span class="count">(1,020)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="lesson-card">
+            <img src="eco.jpg" alt="Economics" />
+            <div class="lesson-info">
+              <h5>Economics Lessons</h5>
+              <p class="price">£25 - £40 / Hour</p>
+              <p class="desc">Micro, Macro, International Trade</p>
+              <div class="rating">
+                <span>★★★★★</span><span class="count">(780)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="lesson-card">
+            <img src="bus.jpg" alt="Business Studies" />
+            <div class="lesson-info">
+              <h5>Business Studies Lessons</h5>
+              <p class="price">£24 - £38 / Hour</p>
+              <p class="desc">Marketing, Management, Strategy</p>
+              <div class="rating">
+                <span>★★★★★</span><span class="count">(700)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tutors-section">
+      <div class="container w-100 d-flex justify-content-center">
+        <div class="text-center">
+          <h2 class="section-title" style="font-size: 1.8rem;">
+            Meet Our <span class="highlight">Tutors</span>
+          </h2>
+          <p class="section-subtitle">
+            Unlock Your Potential with Personalized 1:1 Tutoring. Empowering
+            Learning, One Click at a Time!
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="tp3.jpg" alt="Taylor Jones" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">Taylor Jones</h5>
+                    <span class="online-indicator"></span>
+                    <span class="online-indicator2"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="tp2.jpg" alt="Taylor Jones" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">Taylor Jones</h5>
+                    <span class="online-indicator"></span>
+                    <span class="online-indicator2"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="tp3.jpg" alt="Sharon Brown" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">Sharon Brown</h5>
+                    <span class="online-indicator"></span>
+                    <span class="online-indicator2"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="cta-text">
+            Thousands of students waiting for a tutor. Start teaching & earning
+            now!
+          </p>
+          <a href="#" class="btn btn-tutor">
+            <i class="fas fa-graduation-cap"></i>
+            Become a tutor
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tutors By Levels Section -->
+    <section
+      class="tutors-by-levels py-5 text-left"
+      style="background-color: rgb(241, 241, 241)"
+    >
+      <div class="container">
+        <h2 class="mb-3">Tutors By <span class="text-orange"> Levels</span></h2>
+
+        <div
+          class="row align-items-center justify-content-between text-center text-md-start"
+        >
+          <div class="col-12 col-md-8 mb-4 mb-md-0">
+            <p class="text-muted mb-0">
+              We hand-pick tutors who specialise in the exact level your child
+              is studying. Whether it’s building a strong foundation or
+              mastering exam technique, your tutor will have the right expertise
+              for the job.
+            </p>
+          </div>
+          <div class="col-12 col-md-3">
+            <a href="#" class="btn btn-orange w-70" style="border-radius: 5px">
+              Online Tutor <i class="fas fa-graduation-cap ms-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4 justify-content-center mt-5 mb-1">
+          <div class="col-12 col-md-3">
+            <div class="tutor-level-card">
+              <img src="l1.jpg" alt="Primary Tutors" class="img-fluid" />
+              <h5 class="card-title mt-1">Primary Tutors</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="tutor-level-card">
+              <img src="l2.jpg" alt="11+ Tutors" class="img-fluid" />
+              <h5 class="card-title mt-1">11+ Tutors</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="tutor-level-card">
+              <img src="l3.jpg" alt="GCSE Tutors" class="img-fluid" />
+              <h5 class="card-title mt-1">GCSE Tutors</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="tutor-level-card">
+              <img src="l4.jpg" alt="A Level Tutors" class="img-fluid" />
+              <h5 class="card-title mt-1">A Level Tutors</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Services Section -->
+
+    <section class="tutors-section">
+      <div class="container w-100 d-flex justify-content-center">
+        <div class="text-center">
+          <h2 class="section-title" style="font-size: 1.8rem;">
+            Our <span class="highlight">Services</span>
+          </h2>
+          <p class="section-subtitle">
+            Select a service below and contact us directly to discuss your
+            requirements.
+          </p>
+        </div>
+
+        <img
+          src="star.png"
+          alt=""
+          width="60px"
+          class="d-none d-lg-block"
+          style="position: absolute; right: 100px"
+        />
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="s1.jpg" alt="Taylor Jones" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">Online tuition</h5>
+                    <span class="online-indicator"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="s2.jpg" alt="Taylor Jones" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">Face-to-face home tuition</h5>
+                    <span class="online-indicator"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="s3.jpg" alt="Sharon Brown" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">GCSE tuition</h5>
+                    <span class="online-indicator"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="s4.jpg" alt="Taylor Jones" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">Homeschooling</h5>
+                    <span class="online-indicator"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="s5.png" alt="Taylor Jones" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">11+ tests</h5>
+                    <span class="online-indicator"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="card tutor-card"
+              style="
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                padding: 0px;
+              "
+            >
+              <div
+                class="tutor-image"
+                style="
+                  border-top-left-radius: 50px;
+                  border-top-right-radius: 50px;
+                "
+              >
+                <img src="s6.jpg" alt="Sharon Brown" style="height: 300px" />
+                <div class="tutor-info">
+                  <div class="d-flex align-items-center">
+                    <h5 class="tutor-name">Online Tests</h5>
+                    <span class="online-indicator"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discover Our Blog Section -->
+    <section class="discover-blog py-5">
+      <div class="blue-overlay"></div>
+      <div class="container position-relative" style="z-index: 2">
+        <h2 class="text-orange mb-1">
+          <span class="text-white">Discover Our</span> Blog
+        </h2>
+        <div
+          class="container d-flex justify-content-between align-items-center py-4"
+        >
+          <p class="mb-0 text-white">
+            Do give a read to our blogs, get to know more about us!
+          </p>
+          <a href="#" class="btn btn-orange" style="border-radius: 5px">
+            <i
+              class="fas fa-arrow-right me-2"
+              style="transform: rotate(315deg)"
+            ></i>
+
+            Find Out More
+          </a>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-md-4">
+            <div class="blog-card">
+              <img
+                src="s1.jpg"
+                alt="Top Benefits of Hiring a GCSE Tutor"
+                class="img-fluid"
+              />
+              <div class="card-body p-3">
+                <h5 class="card-title">
+                  Top 5 Benefits of Hiring A GCSE Tutor For Exam Success
+                </h5>
+                <p class="card-text text-muted">
+                  Struggling with GCSE prep? Discover how a dedicated tutor can
+                  improve grade...
+                </p>
+                <p class="card-text text-muted small">| April 4, 2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="blog-card">
+              <img
+                src="s2.jpg"
+                alt="How Personalized Tutoring Boosts GCSE Grades"
+                class="img-fluid"
+              />
+              <div class="card-body p-3">
+                <h5 class="card-title">
+                  How Personalized Tutoring Boosts GCSE Grades And Confidence
+                </h5>
+                <p class="card-text text-muted">
+                  Struggling with GCSE prep? Discover how a dedicated tutor can
+                  improve grade...
+                </p>
+                <p class="card-text text-muted small">| April 4, 2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="blog-card">
+              <img
+                src="s3.jpg"
+                alt="GCSE Revision Tips: What Students Their Tutor in 2025"
+                class="img-fluid"
+              />
+              <div class="card-body p-3">
+                <h5 class="card-title">
+                  GCSE Revision Tips: What Students Their Tutor in 2025
+                </h5>
+                <p class="card-text text-muted">
+                  The 2025 GCSEs are more complex. Learn what strategies tutors
+                  are u...
+                </p>
+                <p class="card-text text-muted small">| April 4, 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Match Students With Tutors Section -->
+    <section class="match-students-tutors py-5 mt-5">
+      <div class="container">
+        <h2 class="text-orange mb-3">
+          <span class="text-dark">How We Match</span> Students With Tutors
+        </h2>
+        <p class="mb-5">
+          At BAK Tutors Hub, we believe the right tutor makes all the
+          difference. That’s why we take the time to match each student with a
+          tutor who fits their academic needs, learning style, and personality.
+        </p>
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <h3 class="mb-4">Here’s How It Works:</h3>
+            <div class="match-step mb-4">
+              <h4 class="">Tell Us What You Need:</h4>
+              <p class="text-muted">
+                Whether it’s help with GCSE Biology or A-Level Chemistry, we’ll
+                learn about your goals, subject focus, and schedule.
+              </p>
+            </div>
+            <div class="match-step mb-4">
+              <h4 class="">We Assess The Best Fit</h4>
+              <p class="text-muted">
+                Based on your level and learning preferences, we select a tutor
+                with the right expertise and teaching style.
+              </p>
+            </div>
+            <div class="match-step mb-4">
+              <h4 class="">Meet Your Tutor</h4>
+              <p class="text-muted">
+                We’ll introduce you to your matched tutor and set up your first
+                session. You can switch tutors anytime if it’s not the perfect
+                fit—no stress!
+              </p>
+            </div>
+            <div class="match-step">
+              <h4 class="">Track Progress Together</h4>
+              <p class="text-muted">
+                We regularly check in to ensure you’re seeing results, feeling
+                confident, and getting the support you need.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="tutor-images position-relative">
+              <div class="tutor-image-left">
+                <img
+                  src="h1.jpg"
+                  alt="Tutor Image"
+                  class="img-fluid rounded"
+                />
+                <div class="call-icons">
+                  <button class="btn btn-danger rounded-circle">
+                    <i class="fas fa-phone"></i>
+                  </button>
+                  <button class="btn btn-success rounded-circle">
+                    <i class="fas fa-user-plus"></i>
+                  </button>
+                  <button class="btn btn-success rounded-circle">
+                    <i class="fas fa-video"></i>
+                  </button>
+                  <button class="btn btn-success rounded-circle">
+                    <i class="fas fa-comment"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="tutor-image-right">
+                <img
+                  src="h2.jpg"
+                  alt="Classroom Image"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- We Go Beyond Section -->
+    <section class="we-go-beyond py-5">
+      <div class="container">
+        <h2 class="text-orange mb-3">
+          <span class="text-dark">We Go Beyond The</span> Traditional Tutoring
+          Model
+        </h2>
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md-8">
+            <p class="text-muted mb-3">
+              At Bak Tutors Hub, we believe the right tutor makes all the
+              difference. That’s why we take the time to match each student with
+              a tutor who fits their academic needs, learning style, and
+              personality.
+            </p>
+            <p class="text-muted mb-3">
+              We’re not just a directory of tutors where you’re left to browse
+              and choose on your own. Instead, we take a highly personalized
+              approach to pairing students with the right tutors, ensuring a
+              meaningful and effective learning experience.
+            </p>
+            <p class="text-muted mb-3">
+              Our process involves two key steps. First, we meticulously build
+              and maintain a network of highly qualified, experienced, and
+              passionate online tutors. We collaborate exclusively with the best
+              educators who are experts in their fields, rigorously selecting
+              only the top talent. In fact, we accept just a small fraction of
+              applicants, ensuring your child learns from the very best.
+            </p>
+            <p class="text-muted mb-3">
+              Next, we take the time to understand your child’s unique needs,
+              goals, and learning preferences. With this insight, we carefully
+              match them with a tutor who is best suited to help them
+              succeed—both academically and personally. During the first
+              session, the tutor conducts an initial assessment to evaluate your
+              child’s current skills and identify areas for growth.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="beyond-image">
+              <img
+                src="g1.jpg"
+                alt="Students in a classroom"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center flex-md-row-reverse">
+          <div class="col-12 col-md-8">
+            <p class="text-muted mb-3">
+              If either you or the tutor feels the fit isn’t quite right, we
+              will reassess and find a more suitable match.
+            </p>
+            <p class="text-muted mb-3">
+              At Science Clinic, we act as facilitators, ensuring that both
+              students and tutors feel fully supported, comfortable, and
+              confident throughout their journey together. This nurturing
+              relationship paves the way for impressive academic progress and
+              long-term success.
+            </p>
+            <p class="text-muted mb-3">
+              To enhance the learning experience, we offer the option to record
+              online sessions, allowing students to revisit and reinforce their
+              lessons whenever they need. Our ongoing two-way feedback system
+              continuously refines and optimizes the learning process. Plus, our
+              customer support team consists of experienced educators, ensuring
+              any issues are resolved quickly, professionally, and with empathy.
+            </p>
+            <p class="text-muted mb-3">
+              If you believe your child could benefit from expert guidance to
+              achieve their educational goals, reach out to Science Clinic today
+              to discover how we can help them excel.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="beyond-image">
+              <img
+                src="g2.jpg"
+                alt="Student in online tutoring session"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Tutor Videos Section -->
+    <section class="featured-videos py-5">
+      <div class="container">
+        <h2 class="mb-4">
+          Our <span class="text-orange"> Featured</span> Tutor Videos
+        </h2>
+        <div class="video-carousel-container position-relative">
+          <div class="video-carousel" id="videoCarousel">
+            <div class="video-card">
+              <div class="video-image">
+                <img
+                  src="s1.jpg"
+                  alt="Mathematical Logical Solutions"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mathematical Logical Solutions</h5>
+                <a href="#" class="btn btn-link text-decoration-none watch-now">
+                  <i class="fab fa-youtube me-2"></i> Watch Now
+                </a>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-image">
+                <img
+                  src="s2.jpg"
+                  alt="Science Lab Tutorial"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Science Lab Tutorial</h5>
+                <a href="#" class="btn btn-link text-decoration-none watch-now">
+                  <i class="fab fa-youtube me-2"></i> Watch Now
+                </a>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-image">
+                <img src="s3.jpg" alt="Economic Classes" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Economic Classes</h5>
+                <a href="#" class="btn btn-link text-decoration-none watch-now">
+                  <i class="fab fa-youtube me-2"></i> Watch Now
+                </a>
+              </div>
+            </div>
+            <!-- Duplicate cards for infinite scrolling -->
+            <div class="video-card">
+              <div class="video-image">
+                <img
+                  src="s4.jpg"
+                  alt="Mathematical Logical Solutions"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Mathematical Logical Solutions</h5>
+                <a href="#" class="btn btn-link text-decoration-none watch-now">
+                  <i class="fab fa-youtube me-2"></i> Watch Now
+                </a>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-image">
+                <img
+                  src="s5.png"
+                  alt="Science Lab Tutorial"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Science Lab Tutorial</h5>
+                <a href="#" class="btn btn-link text-decoration-none watch-now">
+                  <i class="fab fa-youtube me-2"></i> Watch Now
+                </a>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-image">
+                <img src="s1.jpg" alt="Economic Classes" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Economic Classes</h5>
+                <a href="#" class="btn btn-link text-decoration-none watch-now">
+                  <i class="fab fa-youtube me-2"></i> Watch Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="carousel-control prev" onclick="moveCarousel(-1)">
+            &#10094;
+          </button>
+          <button class="carousel-control next" onclick="moveCarousel(1)">
+            &#10095;
+          </button> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="expert-tuition py-5">
+      <div class="container mt-5">
+        <!-- Section Title -->
+        <div class="d-flex align-items-center mb-4">
+          <div
+            class="me-2"
+            style="
+              width: 80px;
+              height: 2px;
+              background-color: black;
+              margin-left: -100px;
+            "
+          ></div>
+          <h2 class="fw-bold mb-0">Expert Tuition</h2>
+        </div>
+
+        <div class="row g-4 align-items-start">
+          <!-- Left Column (narrower) -->
+          <div class="col-lg-4">
+            <img
+              src="t1.jpg"
+              class="img-fluid mb-4"
+              alt="Tutor Teaching"
+              style="border-radius: 30px"
+            />
+            <h5 class="fw-bold">How Much Does Tuition Cost?</h5>
+            <p class="text-muted">
+              Our rates are very competitive and are designed to make tuition
+              affordable for parents and students.
+              <br /><br />
+              The hourly rate varies depending on what subject and level you
+              need, but we will tell you exactly how much tuition is per hour
+              during the free consultation once we know what you need.
+              <br /><br />
+              Please get in touch to discuss how we can help you to succeed.
+            </p>
+          </div>
+
+          <div class="col-lg-1"></div>
+
+          <!-- Right Column (wider) -->
+          <div class="col-lg-7">
+            <h5 class="fw-bold">How Does It Work?</h5>
+            <p class="text-muted">
+              We pride ourselves on our speed to find the best tutor for you
+              because we know just how quickly the academic year flashes by!
+              First, fill in our enquiry form and tell us what subject(s) and
+              level you need a tutor for. Next, one of our consultants from the
+              office will call you as soon as possible. After a free
+              consultation, we then match you with the right educator from our
+              army of tutors. The tuition period is open and flexible and you
+              can pause or stop tuition at any time.
+            </p>
+
+            <!-- Orange Border Container with Floating Image -->
+            <div class="orange-box position-relative mt-5">
+              <img
+                src="t2.jpg"
+                class="img-fluid floating-image position-relative"
+                alt="Kids Learning"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experienced Private Tutors Section -->
+    <section class="experienced-tutors py-5">
+      <div class="container">
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="row text-center w-100">
+            <div class="col-12">
+              <h2 class="mb-4">
+                Experienced <span class="text-orange">Private Tutors</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-md-4 mb-4 mb-md-0">
+            <div
+              class="tutor-card"
+              style="padding: 0px; height: 100%; width: 100%; overflow: hidden"
+            >
+              <div
+                class="tutor-image"
+                style="height: 100%; width: 100%; position: relative"
+              >
+                <img
+                  src="left.jpg"
+                  alt="Tutor with Student"
+                  style="
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <p class="text-muted mb-3">
+              We offer online, one on one have extensive experience helping
+              students achieve their potential, and we provide tutoring in all
+              core and elective subjects and across all levels, including Maths,
+              English, Science.
+            </p>
+            <p class="text-muted mb-0">
+              We have already helped hundreds of students in their GCSEs,
+              AS/A-Levels, 11 Plus exam preparation and SATS exam preparation.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="tutor-card"
+              style="padding: 0px; height: 100%; width: 100%; overflow: hidden"
+            >
+              <div
+                class="tutor-image"
+                style="height: 100%; width: 100%; position: relative"
+              >
+                <img
+                  src="right.jpg"
+                  alt="Tutor with Student"
+                  style="
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tutoring-section">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        "
+      >
+        <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 10px">
+          Let Your Child <span style="color: #ff9900">Shine</span>
+        </h2>
+        <p style="font-size: 1.2rem; color: #555; margin-bottom: 10px">
+          HIGHEST QUALITY TUTORING
+        </p>
+        <p style="font-size: 1rem; color: #666">
+          From qualified teachers and graduates from high profile universities.
+        </p>
+      </div>
+
+      <div class="container my-5">
+        <div class="row text-center justify-content-center">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="feature-box">
+              <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+              <h3>Incredible Tutors</h3>
+              <p>
+                1-on-1 Online and In-Person video tutoring with the best tutors
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="feature-box" style="height: 250px; margin-top: 50px">
+              <div class="icon"><i class="fas fa-th-large"></i></div>
+              <h3>Designed For Every Child</h3>
+              <p>Personalized learning plans. Tutors matched to your child</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div
+              class="feature-box highlighted"
+              style="height: 200px; margin-top: 100px"
+            >
+              <div class="icon"><i class="fas fa-book-open"></i></div>
+              <h3>Homework & Test Provided</h3>
+              <p style="color: white">Parents kept up to date</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="feature-box" style="height: 250px; margin-top: 50px">
+              <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+              <h3>Flexible Scheduling</h3>
+              <p>Pick times/days that suit your child</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="feature-box">
+              <div class="icon"><i class="fas fa-headset"></i></div>
+              <h3>Speedy Support</h3>
+              <p>Speedy tutor support for urgent questions</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-features">
+          <span
+            ><strong>Incredible 1-2-1</strong> Online and In-person tutoring for
+            all age groups tutors at unbeatable prices</span
+          >
+          <span>All boards including AQA, OCR, Edexcel WJEC</span>
+          <span
+            >Highly interactive lessons and personalised teaching plans</span
+          >
+          <span
+            >Ace your exams, tests and homeworks. Get ahead
+            <strong>HIGHEST QUALITY TUTORING</strong></span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="exam-board-section">
+      <div class="container">
+        <div class="text-content">
+          <h2>Complimenting Your <span>Child's School Learning</span></h2>
+          <p>We Work With Several Exam Boards Including:</p>
+        </div>
+        <ul class="exam-board-list">
+          <li>Pearson Edexcel</li>
+          <li>AQA (Assessment & Qualification Alliance)</li>
+          <li>OCR (Oxford, Cambridge And RSA Exams)</li>
+          <li>Cambridge</li>
+          <li>WJEC (Welsh Joint Examinations Committee)</li>
+          <li>Scottish Curriculum</li>
+          <li>
+            Qualifications In Northern Ireland (QualsNI) – Northern Ireland
+            Curriculum
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="exam-board-slider">
+      <div class="slider-track">
+        <!-- Original Set -->
+        <div class="slide"><img src="m1.jpg" alt="wjec cbac" /></div>
+        <div class="slide"><img src="m2.jpg" alt="AQA" /></div>
+        <div class="slide">
+          <img src="m3.jpg" alt="Cambridge Assessment" />
+        </div>
+        <div class="slide"><img src="m4.jpg" alt="CEA" /></div>
+        <div class="slide"><img src="m5.jpg" alt="Edexcel" /></div>
+        <div class="slide"><img src="m6.jpg" alt="Eduqas" /></div>
+        <div class="slide"><img src="m7.jpg" alt="Eduqas" /></div>
+        <div class="slide"><img src="m8.jpg" alt="Eduqas" /></div>
+
+        <!-- Duplicate Set for Seamless Loop -->
+        <div class="slide"><img src="m1.jpg" alt="wjec cbac" /></div>
+        <div class="slide"><img src="m2.jpg" alt="AQA" /></div>
+        <div class="slide">
+          <img src="m3.jpg" alt="Cambridge Assessment" />
+        </div>
+        <div class="slide"><img src="m4.jpg" alt="CEA" /></div>
+        <div class="slide"><img src="m5.jpg" alt="Edexcel" /></div>
+        <div class="slide"><img src="m6.jpg" alt="Eduqas" /></div>
+        <div class="slide"><img src="m7.jpg" alt="Eduqas" /></div>
+        <div class="slide"><img src="m8.jpg" alt="Eduqas" /></div>
+      </div>
+    </section>
+
+
+    <div class="container py-5">
+  <div class="section-title">
+    You Can Be Sure That What We Teach, Compliments Their School Education And Is In Line With Their School Curriculum
+  </div>
+
+  <div class="accordion" id="educationAccordion">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Description Of Teaching Levels In England And Wales
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+        <div class="accordion-body">
+          Content for England and Wales...
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Description Of Teaching Levels In Scotland
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+        <div class="accordion-body">
+          Content for Scotland...
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          Comparing The Education System In All 4 Nations In The UK (Primary, Secondary & College)
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+        <div class="accordion-body">
+          Content for all 4 nations comparison...
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+          Description Of Teaching Levels In England And Wales
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+        <div class="accordion-body">
+          Repeated content for demonstration...
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <section class="testimonial-section position-relative">
+      <div class="blue-overlay"></div>
+      <div class="container position-relative text-white py-5">
+        <h2 class="testimonial-heading text-center fw-bold mb-5">
+          What Our Clients Are Saying About Us
+        </h2>
+        <div class="testimonial-slider">
+          <!-- Card 1 -->
+          <div class="testimonial-card p-4">
+            <div class="stars text-warning mb-2">★★★★★</div>
+            <h5 class="fw-bold">Daniel Cooper</h5>
+            <p>
+              <strong>Science</strong> – Mr. Idris Mahmood<br /><strong
+                >English</strong
+              >
+              – Ms. Angela Stone
+            </p>
+            <p>
+              We were struggling to keep up with schoolwork until we started
+              with Bak Tutors Hub. The sessions were tailored to my son’s needs,
+              and his mock results improved significantly.
+            </p>
+            <p class="date text-warning">12/01/2023</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="testimonial-card p-4">
+            <div class="stars text-warning mb-2">★★★★★</div>
+            <h5 class="fw-bold">Zachary White</h5>
+            <p><strong>Maths & Physics</strong> – Mr. Yousaf Khan</p>
+            <p>
+              Fantastic tutors! Clear explanations, engaging methods, and timely
+              feedback. My son looked forward to every session and is now
+              planning to take A-levels in both subjects. Huge thanks to the
+              team!
+            </p>
+            <p class="date text-warning">12/01/2023</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="testimonial-card p-4">
+            <div class="stars text-warning mb-2">★★★★★</div>
+            <h5 class="fw-bold">Khadija Hussain</h5>
+            <p>
+              <strong>Maths</strong> – Mr. Asim Khan<br /><strong
+                >English</strong
+              >
+              – Mrs. Rebecca Owen
+            </p>
+            <p>
+              My daughter really enjoyed her lessons. She felt confident going
+              into her exams. Tutors were patient, kind, and explained things in
+              a way she could understand. We truly appreciate the support!
+            </p>
+            <p class="date text-warning">12/01/2023</p>
+          </div> 
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="association-section">
+      <img
+        src="arrow.png"
+        alt=""
+        width="300px"
+        class="d-none d-lg-block"
+        style="position: absolute; left: 0px"
+      />
+      <h2>Associations</h2>
+      <p class="mb-5">
+        Bak Tutors Hub is proud to be associated with the following
+        organisations...
+      </p>
+
+      <div class="association-slider">
+        <div class="slider-track">
+          <!-- Original Set -->
+          <div class="slide"><img src="a1.png" alt="Kerboodle" /></div>
+          <div class="slide">
+            <img src="a2.png" alt="The Tutors' Association" />
+          </div>
+          <div class="slide"><img src="a3.png" alt="MyMaths" /></div>
+          <div class="slide">
+            <img src="a4.png" alt="Cambridge University Press" />
+          </div>
+
+          <div class="slide"><img src="a6.png" alt="AutoMaths" /></div>
+          <div class="slide"><img src="a7.png" alt="AutoMaths" /></div>
+
+          <!-- Duplicate Set for Seamless Loop -->
+          <div class="slide"><img src="a1.png" alt="Kerboodle" /></div>
+          <div class="slide">
+            <img src="a2.png" alt="The Tutors' Association" />
+          </div>
+          <div class="slide"><img src="a3.png" alt="MyMaths" /></div>
+          <div class="slide">
+            <img src="a4.png" alt="Cambridge University Press" />
+          </div>
+
+          <div class="slide"><img src="a6.png" alt="AutoMaths" /></div>
+          <div class="slide"><img src="a7.png" alt="AutoMaths" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subjects-section">
+      <div class="section-header">
+        <h2><span>Subjects</span> We Offer</h2>
+        <button class="other-subjects-btn">
+          <i
+            class="fas fa-arrow-right me-2"
+            style="transform: rotate(315deg)"
+          ></i>
+          Other Subjects
+        </button>
+      </div>
+
+      <div class="subjects-grid">
+        <!-- Featured Subject -->
+        <div class="subject-box featured">
+          <img src="math.jpg" alt="Mathematics" />
+          <div class="overlay always-visible">
+            <h3>Mathematics</h3>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Other Subjects -->
+        <div class="subject-box">
+          <img src="s3.jpg" alt="Science" />
+          <div class="overlay">
+            <h3>Science</h3>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="subject-box">
+          <img src="eng.jpg" alt="English" />
+          <div class="overlay">
+            <h3>English</h3>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="subject-box">
+          <img src="bio.jpg" alt="Biology" />
+          <div class="overlay">
+            <h3>Biology</h3>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="subject-box">
+          <img src="chem.jpg" alt="Chemistry" />
+          <div class="overlay">
+            <h3>Chemistry</h3>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="subject-box">
+          <img src="eco.jpg" alt="Economics" />
+          <div class="overlay">
+            <h3>History</h3>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="subject-box">
+          <img src="phy.jpg" alt="Physics" />
+          <div class="overlay">
+            <h3>Physics</h3>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+   <footer class="text-white pt-5" style="background-color: rgba(27, 47, 117, 1);">
+  <div class="container pt-5">
+
+    <!-- Row 1: Main Sections -->
+    <div class="row mb-4 w-100 d-flex justify-content-between">
+      <!-- Resources -->
+      <div class="col-md-3 col-lg-3">
+        <h6 class="fw-bold">Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Bak Tutor Reviews</a></li>
+          <li><a href="#" class="text-white text-decoration-none">How It Works</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Browse Cities</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tutoring Jobs</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Trust On Bak Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Safeguarding Policies</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Meet The Team</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Popular Cities -->
+      <div class="col-md-3 col-lg-3 ">
+        <h6 class="fw-bold">Popular Cities</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Sheffield Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">London Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Nottingham Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Manchester Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Birmingham Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Liverpool Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Glasgow Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Edinburgh Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Newcastle Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Leeds Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Cardiff Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Essex Tutors</a></li>
+        </ul>
+      </div>
+
+      <!-- Academic Subjects -->
+      <div class="col-md-3 col-lg-3">
+        <h6 class="fw-bold">Academic Subjects</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">English Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Maths Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Physics Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Chemistry Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Biology Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">History Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Economics Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Finance Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Politics Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Law Tutors</a></li>
+        </ul>
+      </div>
+
+      <!-- Levels & Languages -->
+      <div class="col-md-3 col-lg-3">
+        <h6 class="fw-bold">Levels & Languages</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">A-Level Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">GCSE Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">11 Plus Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">KS2 & 1 Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">French Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Spanish Tutors</a></li>
+          <li><a href="#" class="text-white text-decoration-none">German Tutors</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Row 2: Parents, Tutors, Newsletter -->
+    <div class="row mb-4">
+      <!-- Parents -->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Parents</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Sign Up</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Student FAQs</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Online Tutoring FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Tutors -->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Tutors</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Join Our Team</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Tutor FAQs</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Online Tutoring FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-6 bg-white rounded text-dark p-3">
+        <h6 class="fw-bold">Newsletter</h6>
+        <p>Subscribe to our newsletter for the latest updates, expert tips, and exclusive offers — straight to your inbox.</p>
+        <form class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="Email">
+          <button class="btn btn-warning text-white" style="font-weight: 100;">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Row 3: Contact, Connect, Logo -->
+    <div class="row align-items-center mb-4 w-100">
+      <!-- Contact -->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Contact</h6>
+        <p><i class="fab fa-whatsapp me-2" style="background-color: white;font-size: 1.4rem;color: #162a72;padding: 6px 8px; border-radius: 50%;"></i>07572505997</p>
+        <p><i class="fas fa-phone me-2" style="background-color: white;font-size: 1.4rem;color: #162a72;padding: 6px 6px; border-radius: 50%;"></i>01245201083</p>
+        
+      </div>
+
+      <div class="col-md-3">
+        <br>
+        <br>
+        <p><i class="fas fa-envelope me-2" style="background-color: white;font-size: 1.4rem;color: #162a72;padding: 6px 6px; border-radius: 50%;"></i>admin@baktutors.co.uk</p>
+        <p><i class="fas fa-map-marker-alt me-2" style="background-color: white;font-size: 1.4rem;color: #162a72;padding: 5px 8px; border-radius: 50%;"></i>39 Moulsham Street, Chelmsford, Essex CM2 0HY</p>
+      </div>
+
+      <!-- Connect With Us -->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Connect With Us!</h6>
+        <div class="d-flex">
+          <a href="#" class="me-3 text-white" ><i class="fab fa-facebook-f" style="height: 40px; width: 40px; background-color: #ff9900; font-size: 2rem;padding:5px 10px; border-radius: 6px;"></i></a>
+          <a href="#" class="me-3 text-white"><i class="fab fa-youtube" style="height: 40px; width: 40px; background-color: #4a00b1; font-size: 2rem;padding:4px 2px; border-radius: 6px;"></i></a>
+          <a href="#" class="me-3 text-white"><i class="fab fa-instagram" style="height: 40px; width: 40px; background-color: #4a00b1; font-size: 2rem;padding:4px 6px; border-radius: 6px;"></i></a>
+          <a href="#" class="me-3 text-white"><i class="fab fa-linkedin-in"style="height: 40px; width: 40px; background-color: #4a00b1; font-size: 2rem;padding:5px 6px; border-radius: 6px;"></i></a>
+          <a href="#" class="me-3 text-white"><i class="fab fa-twitter" style="height: 40px; width: 40px; background-color: #4a00b1; font-size: 2rem;padding:5px 6px; border-radius: 6px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="col-md-3 text-center">
+        <img src="crop.png" alt="Bak Tutors Hub Logo" class="img-fluid" style="max-height: 140px;">
+      </div>
+    </div>
+
+
+    <div class="text-center pb-3 w-100">
+      <hr>
+      <p class="mb-0 p-3">&copy; 2025 Bak Tutors Hub | All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.querySelectorAll(".accordion-header").forEach((button) => {
+        button.addEventListener("click", () => {
+          const body = button.nextElementSibling;
+          const isOpen = button.classList.contains("active");
+
+          document.querySelectorAll(".accordion-header").forEach((btn) => {
+            btn.classList.remove("active");
+            btn.nextElementSibling.style.display = "none";
+          });
+
+          if (!isOpen) {
+            button.classList.add("active");
+            body.style.display = "block";
+          }
+        });
+      });
+    </script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- jQuery (required by Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".testimonial-swiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".subjects-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          pauseOnHover: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".tuition-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3500,
+          pauseOnHover: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".lessons-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          pauseOnHover: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script>
+  $(document).ready(function () {
+    $('.testimonial-slider').slick({
+      dots: true,
+      arrows: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3, // default for large screens
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 992, // medium screens
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 768, // small screens
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+
+    <script>
+      // JavaScript for smooth infinite scroll in the second carousel
+      function initNewInfiniteScroll() {
+        const newSlideContainer = document.querySelector(
+          ".new-carousel-section .subjects-container"
+        );
+        const newSlide = document.querySelector("#newSubjectsSlide");
+        const newCards = newSlide.querySelectorAll(".subject-card");
+        const newCardWidth = newCards[0].offsetWidth + 15;
+        const newTotalWidth = newCards.length * newCardWidth;
+        let newScrollPosition = 0;
+
+        newSlide.innerHTML += newSlide.innerHTML;
+
+        function newScroll() {
+          if (window.innerWidth > 767) {
+            newScrollPosition -= 1;
+            if (Math.abs(newScrollPosition) >= newTotalWidth) {
+              newScrollPosition = 0;
+              newSlide.style.transition = "none";
+              newSlide.style.transform = `translateX(0px)`;
+              newSlide.offsetHeight;
+              newSlide.style.transition = "transform 0.05s linear";
+            } else {
+              newSlide.style.transition = "transform 0.05s linear";
+              newSlide.style.transform = `translateX(${newScrollPosition}px)`;
+            }
+            requestAnimationFrame(newScroll);
+          } else {
+            newSlide.style.transform = "translateX(0)";
+          }
+        }
+
+        if (window.innerWidth > 767) {
+          requestAnimationFrame(newScroll);
+        }
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth <= 767) {
+            newSlide.style.transform = "translateX(0)";
+            newSlide.style.transition = "none";
+          } else {
+            newScrollPosition = 0;
+            newSlide.style.transform = `translateX(0px)`;
+            requestAnimationFrame(newScroll);
+          }
+        });
+      }
+
+      window.addEventListener("load", () => {
+        initInfiniteScroll();
+        initNewInfiniteScroll();
+      });
+      function scrollLessons(direction) {
+        const slide = document.querySelector("#lessonsSlide");
+        const cardWidth =
+          document.querySelector(".lesson-card").offsetWidth + 20; // Card width + gap
+        const scrollAmount = direction === "left" ? cardWidth : -cardWidth;
+        slide.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+      // Auto-scrolling carousel for featured videos
+      function initVideoCarousel() {
+        const carousel = document.getElementById("videoCarousel");
+        const cards = carousel.querySelectorAll(".video-card");
+        const cardWidth = cards[0].offsetWidth + 20; // Card width + margin
+        const totalCards = cards.length / 2; // Since we duplicated cards for infinite scroll
+        let currentIndex = 0;
+
+        function autoScroll() {
+          currentIndex++;
+          if (currentIndex >= totalCards) {
+            currentIndex = 0;
+            carousel.style.transition = "none";
+            carousel.style.transform = `translateX(0)`;
+            carousel.offsetHeight; // Trigger reflow
+            carousel.style.transition = "transform 0.5s ease-in-out";
+          } else {
+            const translateX = -currentIndex * (cardWidth * 3); // Move by 3 cards' width
+            carousel.style.transform = `translateX(${translateX}px)`;
+          }
+        }
+
+        // Start auto-scrolling every 5 seconds
+        let interval = setInterval(autoScroll, 5000);
+
+        // Pause on hover
+        carousel.addEventListener("mouseenter", () => clearInterval(interval));
+        carousel.addEventListener("mouseleave", () => {
+          interval = setInterval(autoScroll, 5000);
+        });
+
+        // Reset on window resize
+        window.addEventListener("resize", () => {
+          currentIndex = 0;
+          carousel.style.transition = "none";
+          carousel.style.transform = `translateX(0)`;
+          setTimeout(() => {
+            carousel.style.transition = "transform 0.5s ease-in-out";
+          }, 100);
+        });
+      }
+
+      window.addEventListener("load", () => {
+        initVideoCarousel();
+      });
+    </script>
+    <script>
+      const tabButtons = document.querySelectorAll(".tab-btn");
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          tabButtons.forEach((btn) => btn.classList.remove("active-btn"));
+          button.classList.add("active-btn");
+        });
+      });
+    </script>
+  </body>
+</html>

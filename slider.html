@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Lessons - Responsive with Slick Slider</title>
+    
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .online-lessons {
+            background: linear-gradient(135deg, #fff5f0 0%, #fff 100%);
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .online-lessons::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(255, 102, 0, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 102, 0, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+
+        .online-lessons h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .text-orange {
+            color: #ff6600;
+        }
+
+        .online-lessons .text-muted {
+            font-size: 1.1rem;
+            color: #6c757d;
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .nav-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .nav-arrow {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: white;
+            border: 2px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-arrow:hover {
+            border-color: #ff6600;
+            background: #ff6600;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+        }
+
+        .nav-arrow svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .lessons-slider-container {
+            position: relative;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border: none;
+            margin: 0 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .lesson-image-container {
+            position: relative;
+            overflow: hidden;
+            height: 180px;
+        }
+
+        .lesson-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .lesson-card:hover .lesson-image {
+            transform: scale(1.05);
+        }
+
+        .lesson-card-body {
+            padding: 25px;
+        }
+
+        .lesson-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .lesson-price {
+            color: #ff6600;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .lesson-description {
+            color: #6c757d;
+            font-size: 0.95rem;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+
+        .lesson-rating {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+            padding: 8px 12px;
+            border-radius: 25px;
+            display: inline-flex;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(255, 230, 131, 0.4);
+        }
+
+        .lesson-stars {
+            color: #ffa500;
+            font-size: 0.9rem;
+            margin-right: 8px;
+        }
+
+        .lesson-rating-count {
+            color: #5a5a5a;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .orange-circle {
+            position: absolute;
+            top: 50%;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: #ff6600;
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+
+        /* Custom Slick Slider Styles */
+        .lessons-slider.slick-initialized {
+            padding: 20px 0;
+        }
+
+        .lessons-slider .slick-track {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .lessons-slider .slick-slide {
+            height: auto;
+        }
+
+        .lessons-slider .slick-slide > div {
+            height: 100%;
+        }
+
+        /* Hide default slick arrows since we're using custom ones */
+        .lessons-slider .slick-prev,
+        .lessons-slider .slick-next {
+            display: none !important;
+        }
+
+        /* Custom dots styling */
+        .lessons-slider .slick-dots {
+            bottom: -60px;
+            text-align: center;
+        }
+
+        .lessons-slider .slick-dots li {
+            margin: 0 5px;
+        }
+
+        .lessons-slider .slick-dots li button:before {
+            font-size: 14px;
+            color: #ff6600;
+            opacity: 0.4;
+        }
+
+        .lessons-slider .slick-dots li.slick-active button:before {
+            opacity: 1;
+            color: #ff6600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .online-lessons h2 {
+                font-size: 2.4rem;
+            }
+            
+            .lesson-card {
+                margin: 0 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .online-lessons {
+                padding: 40px 0;
+            }
+            
+            .online-lessons h2 {
+                font-size: 2.2rem;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+            
+            .nav-controls {
+                align-self: flex-end;
+                margin-top: 0;
+            }
+            
+            .nav-arrow {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .nav-arrow svg {
+                width: 18px;
+                height: 18px;
+            }
+            
+            .lesson-card-body {
+                padding: 20px;
+            }
+            
+            .lesson-title {
+                font-size: 1.1rem;
+            }
+            
+            .lesson-price {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .online-lessons h2 {
+                font-size: 1.8rem;
+            }
+            
+            .online-lessons .text-muted {
+                font-size: 1rem;
+            }
+            
+            .section-header {
+                text-align: left;
+            }
+            
+            .nav-controls {
+                align-self: center;
+                margin-top: 20px;
+            }
+            
+            .lesson-card {
+                margin: 0 8px;
+            }
+            
+            .lesson-image-container {
+                height: 160px;
+            }
+            
+            .lesson-card-body {
+                padding: 18px;
+            }
+            
+            .lesson-title {
+                font-size: 1rem;
+            }
+            
+            .lesson-price {
+                font-size: 1.1rem;
+            }
+            
+            .lesson-description {
+                font-size: 0.9rem;
+            }
+            
+            .orange-circle {
+                width: 100px;
+                height: 100px;
+                right: -30px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .online-lessons h2 {
+                font-size: 1.6rem;
+            }
+            
+            .lesson-card-body {
+                padding: 15px;
+            }
+            
+            .nav-arrow {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .nav-arrow svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="online-lessons">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2><span class="text-dark">Online </span><span class="text-orange">Lessons</span></h2>
+                    <p class="text-muted">
+                        Maths, English, Chemistry, Biology, Physics, Economics, Finance, Business Studies
+                    </p>
+                </div>
+                <div class="nav-controls">
+                    <div class="nav-arrow" id="prevBtn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        </svg>
+                    </div>
+                    <div class="nav-arrow" id="nextBtn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="lessons-slider-container">
+                <div class="lessons-slider" id="lessonsSlider">
+                    <!-- Mathematics Lesson Card -->
+                    <div class="lesson-card">
+                        <div class="lesson-image-container">
+                            <img
+                                src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&h=250&fit=crop&crop=center"
+                                alt="Mathematics Lesson"
+                                class="lesson-image"
+                            />
+                        </div>
+                        <div class="lesson-card-body">
+                            <h5 class="lesson-title">Mathematics Lessons</h5>
+                            <p class="lesson-price">£20 - £33 /Hour</p>
+                            <p class="lesson-description">
+                                GCSE, A-level, KS3, KS2 & KS1, 11 Plus etc
+                            </p>
+                            <div class="lesson-rating">
+                                <span class="lesson-stars">★★★★★</span>
+                                <span class="lesson-rating-count">(1,424)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- English Literature Lesson Card -->
+                    <div class="lesson-card">
+                        <div class="lesson-image-container">
+                            <img
+                                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop&crop=center"
+                                alt="English Literature Lesson"
+                                class="lesson-image"
+                            />
+                        </div>
+                        <div class="lesson-card-body">
+                            <h5 class="lesson-title">English Literature Lessons</h5>
+                            <p class="lesson-price">£20 - £33 /Hour</p>
+                            <p class="lesson-description">
+                                GCSE, A-level, KS3, KS2 & KS1, 11 Plus etc
+                            </p>
+                            <div class="lesson-rating">
+                                <span class="lesson-stars">★★★★★</span>
+                                <span class="lesson-rating-count">(1,424)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Biology Lesson Card -->
+                    <div class="lesson-card">
+                        <div class="lesson-image-container">
+                            <img
+                                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop&crop=center"
+                                alt="Biology Lesson"
+                                class="lesson-image"
+                            />
+                        </div>
+                        <div class="lesson-card-body">
+                            <h5 class="lesson-title">Biology Lessons</h5>
+                            <p class="lesson-price">£20 - £33 /Hour</p>
+                            <p class="lesson-description">
+                                GCSE, A-level, KS3, KS2 & KS1, 11 Plus etc
+                            </p>
+                            <div class="lesson-rating">
+                                <span class="lesson-stars">★★★★★</span>
+                                <span class="lesson-rating-count">(1,424)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chemistry Lesson Card -->
+                    <div class="lesson-card">
+                        <div class="lesson-image-container">
+                            <img
+                                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=250&fit=crop&crop=center"
+                                alt="Chemistry Lesson"
+                                class="lesson-image"
+                            />
+                        </div>
+                        <div class="lesson-card-body">
+                            <h5 class="lesson-title">Chemistry Lessons</h5>
+                            <p class="lesson-price">£20 - £33 /Hour</p>
+                            <p class="lesson-description">
+                                GCSE, A-level, KS3, KS2 & KS1, 11 Plus etc
+                            </p>
+                            <div class="lesson-rating">
+                                <span class="lesson-stars">★★★★★</span>
+                                <span class="lesson-rating-count">(1,424)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physics Lesson Card -->
+                    <div class="lesson-card">
+                        <div class="lesson-image-container">
+                            <img
+                                src="https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?w=400&h=250&fit=crop&crop=center"
+                                alt="Physics Lesson"
+                                class="lesson-image"
+                            />
+                        </div>
+                        <div class="lesson-card-body">
+                            <h5 class="lesson-title">Physics Lessons</h5>
+                            <p class="lesson-price">£20 - £33 /Hour</p>
+                            <p class="lesson-description">
+                                GCSE, A-level, KS3, KS2 & KS1, 11 Plus etc
+                            </p>
+                            <div class="lesson-rating">
+                                <span class="lesson-stars">★★★★★</span>
+                                <span class="lesson-rating-count">(1,424)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Geography Lesson Card -->
+                    <div class="lesson-card">
+                        <div class="lesson-image-container">
+                            <img
+                                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop&crop=center"
+                                alt="Geography Lesson"
+                                class="lesson-image"
+                            />
+                        </div>
+                        <div class="lesson-card-body">
+                            <h5 class="lesson-title">Geography Lessons</h5>
+                            <p class="lesson-price">£20 - £33 /Hour</p>
+                            <p class="lesson-description">
+                                GCSE, A-level, KS3, KS2 & KS1, 11 Plus etc
+                            </p>
+                            <div class="lesson-rating">
+                                <span class="lesson-stars">★★★★★</span>
+                                <span class="lesson-rating-count">(1,424)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Orange decorative circle -->
+        <div class="orange-circle"></div>
+    </section>
+
+    <!-- jQuery and Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Initialize Slick Slider
+            $('.lessons-slider').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 3000,
+                arrows: false, // We're using custom arrows
+                dots: true,
+                pauseOnHover: true,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: true,
+                            centerPadding: '20px'
+                        }
+                    }
+                ]
+            });
+
+            // Custom arrow functionality
+            $('#prevBtn').on('click', function() {
+                $('.lessons-slider').slick('slickPrev');
+            });
+
+            $('#nextBtn').on('click', function() {
+                $('.lessons-slider').slick('slickNext');
+            });
+
+            // Add smooth hover effects
+            $('.lesson-card').hover(
+                function() {
+                    $(this).css('transform', 'translateY(-8px) scale(1.02)');
+                },
+                function() {
+                    $(this).css('transform', 'translateY(0) scale(1)');
+                }
+            );
+        });
+    </script>
+</body>
+</html>
