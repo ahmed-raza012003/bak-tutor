@@ -39,14 +39,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
-
   </head>
   <body>
     <!-- Top Contact Bar -->
     <div class="top-bar text-end px-5 py-2">
-      <!-- <span class="me-3"><i class="bi bi-telephone-fill"></i> 07572505997</span>
-      <span><i class="bi bi-telephone-fill"></i> 01245201083</span> -->
       <div class="contact-wrapper">
         <div class="contact-item">
           <span class="phone-icon-circle"><i class="bi bi-whatsapp"></i></span>
@@ -61,53 +57,56 @@
       </div>
     </div>
 
-    <!-- Main Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5">
-      <div class="container-fluid">
-        <div class="d-flex align-items-center w-100 justify-content-end">
-          <div
-            class="d-inline-block px-2 py-1 rounded-3 text-start me-2"
-            style="font-size: 13px; line-height: 1.2; border: 1px solid black"
-          >
-            <div class="d-flex align-items-center">
-              <img src="google.png" width="18" height="18" class="me-2" />
+    <!-- Main Nav: Only visible on large screens -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-5 d-none d-lg-flex"
+    >
+      <div class="container-fluid justify-content-end align-items-center">
+        <div
+          class="d-inline-block px-2 py-1 rounded-3 text-start me-2"
+          style="font-size: 13px; line-height: 1.2; border: 1px solid black"
+        >
+          <div class="d-flex align-items-center">
+            <img src="google.png" width="18" height="18" class="me-2" />
+            <div>
               <div>
-                <div>
-                  <strong>4.9</strong> <span style="color: #ff9900">★★★★★</span>
-                </div>
-                <small>Parent Reviews</small>
+                <strong>4.9</strong> <span style="color: #ff9900">★★★★★</span>
               </div>
+              <small>Parent Reviews</small>
             </div>
           </div>
-        <a href="https://test.thelanguageacademy.org/register/1" class="btn btn-nav2 me-2 py-2">
-    <i class="bi bi-person-plus me-2"></i> Register as a student
-</a>
-<a href="https://test.thelanguageacademy.org/register/1" class="btn btn-nav2 me-2 py-2">
-    <i class="bi bi-search me-2"></i> Request a Tutor
-</a>
-<a href="https://test.thelanguageacademy.org/register/2" class="btn btn-nav2 me-2 py-2">
-    <i class="bi bi-person me-2"></i> Become a Tutor
-</a>
-
-<div class="dropdown">
-    <button class="btn btn-signin dropdown-toggle py-2" type="button" data-bs-toggle="dropdown">
-        <i class="bi bi-key-fill me-2"></i> Sign In
-    </button>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="https://test.thelanguageacademy.org/login/1">Student</a></li>
-        <li><a class="dropdown-item" href="https://test.thelanguageacademy.org/login/2">Tutor</a></li>
-        <li><a class="dropdown-item" href="https://test.thelanguageacademy.org/login/3">Admin</a></li>
-    </ul>
-</div>
+        </div>
+        <button class="btn btn-nav2 me-2 py-2">
+          <i class="bi bi-person-plus me-2"></i> Register as a student
+        </button>
+        <button class="btn btn-nav2 me-2 py-2">
+          <i class="bi bi-search me-2"></i> Request a Tutor
+        </button>
+        <button class="btn btn-nav2 me-2 py-2">
+          <i class="bi bi-person me-2"></i> Become a Tutor
+        </button>
+        <div class="dropdown">
+          <button
+            class="btn btn-signin dropdown-toggle py-2"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            <i class="bi bi-key-fill me-2"></i> Sign In
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Student</a></li>
+            <li><a class="dropdown-item" href="#">Tutor</a></li>
+            <li><a class="dropdown-item" href="#">Admin</a></li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Third Navigation -->
+    <!-- Third Nav: Always visible, collapsible on small screens -->
     <nav
-      class="navbar navbar-expand-lg bg-white border-top shadow-sm py-2 px-5"
+      class="navbar navbar-expand-lg bg-white border-top shadow-sm py-2 px-1"
     >
-      <div class="container-fluid">
+      <div class="container-fluid w-100">
         <a class="navbar-brand" href="#">
           <img
             src="Logo.png"
@@ -115,18 +114,55 @@
             style="width: 100px; height: 100px"
           />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
+        <!-- Navbar Toggler and Extra Icon Buttons -->
+        <div class="d-flex justify-content-end align-items-center d-lg-none">
+
+          <button
+            class="btn btn-nav2 me-2 mt-2"
+            style="height: 45px; min-width: 45px"
+          >
+            <i class="bi bi-person"></i>
+          </button>
+          <button
+            class="btn btn-nav2 me-2 mt-2"
+            style="height: 45px; min-width: 45px"
+          >
+            <i class="bi bi-person-plus"></i>
+          </button>
+
+          <div class="dropdown me-2 mt-2">
+            <button
+              class="btn btn-signin dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              style="height: 45px; width: 55px"
+            >
+              <i class="bi bi-key-fill"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Student</a></li>
+              <li><a class="dropdown-item" href="#">Tutor</a></li>
+              <li><a class="dropdown-item" href="#">Admin</a></li>
+            </ul>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="height: 45px"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Main Navigation Links -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#">BOOK STUDENTS</a>
@@ -177,6 +213,54 @@
             </li>
             <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
           </ul>
+
+          <!-- Buttons (only visible on small screens) -->
+          <div class="d-lg-none mt-3">
+            <div class="d-flex flex-column gap-2">
+              <div
+                class="d-inline-block px-2 py-1 rounded-3 text-start"
+                style="
+                  font-size: 13px;
+                  line-height: 1.2;
+                  border: 1px solid black;
+                "
+              >
+                <div class="d-flex align-items-center">
+                  <img src="google.png" width="18" height="18" class="me-2" />
+                  <div>
+                    <div>
+                      <strong>4.9</strong>
+                      <span style="color: #ff9900">★★★★★</span>
+                    </div>
+                    <small>Parent Reviews</small>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-nav2">
+                <i class="bi bi-person-plus me-2"></i> Register as a student
+              </button>
+              <button class="btn btn-nav2">
+                <i class="bi bi-search me-2"></i> Request a Tutor
+              </button>
+              <button class="btn btn-nav2">
+                <i class="bi bi-person me-2"></i> Become a Tutor
+              </button>
+              <div class="dropdown">
+                <button
+                  class="btn btn-signin dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="bi bi-key-fill me-2"></i> Sign In
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Student</a></li>
+                  <li><a class="dropdown-item" href="#">Tutor</a></li>
+                  <li><a class="dropdown-item" href="#">Admin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -192,10 +276,32 @@
       <!-- Bottom Right Yellow Blob -->
       <div class="accent-shape yellow-blob"></div>
 
-      <div class="container py-5 position-relative" style="margin-top: 70px;">
-        <h1 class="fw-bold mt-5 mb-4 display-10 mx-auto">
+      <div class="container py-5 position-relative" style="margin-top: 70px">
+        <!-- <h1 class="fw-bold mt-5 mb-4 display-10 mx-auto" style="font-size: 2.8rem;">
           Find <span class="text-orange">Online And In-Person</span> Tutoring
           Students
+        </h1> -->
+
+        <h1 class="letter-animate">
+          <span>F</span><span>i</span><span>n</span><span>d</span
+          ><span>&nbsp;</span> <span class="text-orange">O</span
+          ><span class="text-orange">n</span><span class="text-orange">l</span
+          ><span class="text-orange">i</span><span class="text-orange">n</span
+          ><span class="text-orange">e</span>
+          <span>&nbsp;</span>
+          <span class="text-orange">A</span><span class="text-orange">n</span
+          ><span class="text-orange">d</span><span>&nbsp;</span>
+          <span class="text-orange">I</span><span class="text-orange">n</span
+          ><span class="text-orange">-</span><span class="text-orange">P</span
+          ><span class="text-orange">e</span><span class="text-orange">r</span
+          ><span class="text-orange">s</span><span class="text-orange">o</span
+          ><span class="text-orange">n</span>
+          <span>&nbsp;</span>
+          <span>T</span><span>u</span><span>t</span><span>o</span><span>r</span
+          ><span>i</span><span>n</span><span>g</span>
+          <span>&nbsp;</span>
+          <span>S</span><span>t</span><span>u</span><span>d</span><span>e</span
+          ><span>n</span><span>t</span><span>s</span>
         </h1>
 
         <!-- Form Section -->
@@ -856,7 +962,7 @@
     <section class="tutors-section">
       <div class="container w-100 d-flex justify-content-center">
         <div class="text-center">
-          <h2 class="section-title" style="font-size: 1.8rem;">
+          <h2 class="section-title" style="font-size: 1.8rem">
             Meet Our <span class="highlight">Tutors</span>
           </h2>
           <p class="section-subtitle">
@@ -1023,7 +1129,7 @@
     <section class="tutors-section">
       <div class="container w-100 d-flex justify-content-center">
         <div class="text-center">
-          <h2 class="section-title" style="font-size: 1.8rem;">
+          <h2 class="section-title" style="font-size: 1.8rem">
             Our <span class="highlight">Services</span>
           </h2>
           <p class="section-subtitle">
@@ -1339,11 +1445,7 @@
           <div class="col-12 col-md-6">
             <div class="tutor-images position-relative">
               <div class="tutor-image-left">
-                <img
-                  src="h1.jpg"
-                  alt="Tutor Image"
-                  class="img-fluid rounded"
-                />
+                <img src="h1.jpg" alt="Tutor Image" class="img-fluid rounded" />
                 <div class="call-icons">
                   <button class="btn btn-danger rounded-circle">
                     <i class="fas fa-phone"></i>
@@ -1833,68 +1935,99 @@
       </div>
     </section>
 
-
     <div class="container py-5">
-  <div class="section-title">
-    You Can Be Sure That What We Teach, Compliments Their School Education And Is In Line With Their School Curriculum
-  </div>
+      <div class="section-title">
+        You Can Be Sure That What We Teach, Compliments Their School Education
+        And Is In Line With Their School Curriculum
+      </div>
 
-  <div class="accordion" id="educationAccordion">
+      <div class="accordion" id="educationAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+            >
+              Description Of Teaching Levels In England And Wales
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#educationAccordion"
+          >
+            <div class="accordion-body">Content for England and Wales...</div>
+          </div>
+        </div>
 
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-          Description Of Teaching Levels In England And Wales
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
-        <div class="accordion-body">
-          Content for England and Wales...
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+            >
+              Description Of Teaching Levels In Scotland
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#educationAccordion"
+          >
+            <div class="accordion-body">Content for Scotland...</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+            >
+              Comparing The Education System In All 4 Nations In The UK
+              (Primary, Secondary & College)
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#educationAccordion"
+          >
+            <div class="accordion-body">
+              Content for all 4 nations comparison...
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+            >
+              Description Of Teaching Levels In England And Wales
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#educationAccordion"
+          >
+            <div class="accordion-body">
+              Repeated content for demonstration...
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-          Description Of Teaching Levels In Scotland
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
-        <div class="accordion-body">
-          Content for Scotland...
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-          Comparing The Education System In All 4 Nations In The UK (Primary, Secondary & College)
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
-        <div class="accordion-body">
-          Content for all 4 nations comparison...
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingFour">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-          Description Of Teaching Levels In England And Wales
-        </button>
-      </h2>
-      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
-        <div class="accordion-body">
-          Repeated content for demonstration...
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
 
     <section class="testimonial-section position-relative">
       <div class="blue-overlay"></div>
@@ -1949,9 +2082,7 @@
               a way she could understand. We truly appreciate the support!
             </p>
             <p class="date text-warning">12/01/2023</p>
-          </div> 
-
-
+          </div>
         </div>
       </div>
     </section>
@@ -2070,158 +2201,453 @@
     </section>
 
     <!-- Footer Section -->
-   <footer class="text-white pt-5" style="background-color: rgba(27, 47, 117, 1);">
-  <div class="container pt-5">
+    <footer
+      class="text-white pt-5"
+      style="background-color: rgba(27, 47, 117, 1)"
+    >
+      <div class="container pt-5">
+        <!-- Row 1: Main Sections -->
+        <div class="row mb-4 w-100 d-flex justify-content-between">
+          <!-- Resources -->
+          <div class="col-md-3 col-lg-3">
+            <h6 class="fw-bold">Resources</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Bak Tutor Reviews</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Browse Cities</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Tutoring Jobs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Trust On Bak Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Safeguarding Policies</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Meet The Team</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Blog</a>
+              </li>
+            </ul>
+          </div>
 
-    <!-- Row 1: Main Sections -->
-    <div class="row mb-4 w-100 d-flex justify-content-between">
-      <!-- Resources -->
-      <div class="col-md-3 col-lg-3">
-        <h6 class="fw-bold">Resources</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Bak Tutor Reviews</a></li>
-          <li><a href="#" class="text-white text-decoration-none">How It Works</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Browse Cities</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Tutoring Jobs</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Trust On Bak Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Safeguarding Policies</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Meet The Team</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
-        </ul>
-      </div>
+          <!-- Popular Cities -->
+          <div class="col-md-3 col-lg-3">
+            <h6 class="fw-bold">Popular Cities</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Sheffield Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >London Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Nottingham Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Manchester Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Birmingham Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Liverpool Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Glasgow Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Edinburgh Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Newcastle Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Leeds Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Cardiff Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Essex Tutors</a
+                >
+              </li>
+            </ul>
+          </div>
 
-      <!-- Popular Cities -->
-      <div class="col-md-3 col-lg-3 ">
-        <h6 class="fw-bold">Popular Cities</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Sheffield Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">London Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Nottingham Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Manchester Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Birmingham Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Liverpool Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Glasgow Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Edinburgh Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Newcastle Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Leeds Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Cardiff Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Essex Tutors</a></li>
-        </ul>
-      </div>
+          <!-- Academic Subjects -->
+          <div class="col-md-3 col-lg-3">
+            <h6 class="fw-bold">Academic Subjects</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >English Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Maths Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Physics Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Chemistry Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Biology Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >History Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Economics Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Finance Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Politics Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Law Tutors</a
+                >
+              </li>
+            </ul>
+          </div>
 
-      <!-- Academic Subjects -->
-      <div class="col-md-3 col-lg-3">
-        <h6 class="fw-bold">Academic Subjects</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">English Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Maths Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Physics Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Chemistry Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Biology Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">History Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Economics Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Finance Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Politics Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Law Tutors</a></li>
-        </ul>
-      </div>
+          <!-- Levels & Languages -->
+          <div class="col-md-3 col-lg-3">
+            <h6 class="fw-bold">Levels & Languages</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >A-Level Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >GCSE Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >11 Plus Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >KS2 & 1 Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >French Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Spanish Tutors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >German Tutors</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <!-- Levels & Languages -->
-      <div class="col-md-3 col-lg-3">
-        <h6 class="fw-bold">Levels & Languages</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">A-Level Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">GCSE Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">11 Plus Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">KS2 & 1 Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">French Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Spanish Tutors</a></li>
-          <li><a href="#" class="text-white text-decoration-none">German Tutors</a></li>
-        </ul>
-      </div>
-    </div>
+        <!-- Row 2: Parents, Tutors, Newsletter -->
+        <div class="row mb-4">
+          <!-- Parents -->
+          <div class="col-md-3">
+            <h6 class="fw-bold">Parents</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Sign Up</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Student FAQs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Online Tutoring FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
 
-    <!-- Row 2: Parents, Tutors, Newsletter -->
-    <div class="row mb-4">
-      <!-- Parents -->
-      <div class="col-md-3">
-        <h6 class="fw-bold">Parents</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Sign Up</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Student FAQs</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Online Tutoring FAQs</a></li>
-        </ul>
-      </div>
+          <!-- Tutors -->
+          <div class="col-md-3">
+            <h6 class="fw-bold">Tutors</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Join Our Team</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Tutor FAQs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Online Tutoring FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
 
-      <!-- Tutors -->
-      <div class="col-md-3">
-        <h6 class="fw-bold">Tutors</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white text-decoration-none">Join Our Team</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Tutor FAQs</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Online Tutoring FAQs</a></li>
-        </ul>
-      </div>
+          <!-- Newsletter -->
+          <div class="col-md-6 bg-white rounded text-dark p-3">
+            <h6 class="fw-bold">Newsletter</h6>
+            <p>
+              Subscribe to our newsletter for the latest updates, expert tips,
+              and exclusive offers — straight to your inbox.
+            </p>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Email"
+              />
+              <button
+                class="btn btn-warning text-white"
+                style="font-weight: 100"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
 
-      <!-- Newsletter -->
-      <div class="col-md-6 bg-white rounded text-dark p-3">
-        <h6 class="fw-bold">Newsletter</h6>
-        <p>Subscribe to our newsletter for the latest updates, expert tips, and exclusive offers — straight to your inbox.</p>
-        <form class="d-flex">
-          <input type="email" class="form-control me-2" placeholder="Email">
-          <button class="btn btn-warning text-white" style="font-weight: 100;">Subscribe</button>
-        </form>
-      </div>
-    </div>
+        <!-- Row 3: Contact, Connect, Logo -->
+        <div class="row align-items-center mb-4 w-100">
+          <!-- Contact -->
+          <div class="col-md-3">
+            <h6 class="fw-bold">Contact</h6>
+            <p>
+              <i
+                class="fab fa-whatsapp me-2"
+                style="
+                  background-color: white;
+                  font-size: 1.4rem;
+                  color: #162a72;
+                  padding: 6px 8px;
+                  border-radius: 50%;
+                "
+              ></i
+              >07572505997
+            </p>
+            <p>
+              <i
+                class="fas fa-phone me-2"
+                style="
+                  background-color: white;
+                  font-size: 1.4rem;
+                  color: #162a72;
+                  padding: 6px 6px;
+                  border-radius: 50%;
+                "
+              ></i
+              >01245201083
+            </p>
+          </div>
 
-    <!-- Row 3: Contact, Connect, Logo -->
-    <div class="row align-items-center mb-4 w-100">
-      <!-- Contact -->
-      <div class="col-md-3">
-        <h6 class="fw-bold">Contact</h6>
-        <p><i class="fab fa-whatsapp me-2" style="background-color: white;font-size: 1.4rem;color: #162a72;padding: 6px 8px; border-radius: 50%;"></i>07572505997</p>
-        <p><i class="fas fa-phone me-2" style="background-color: white;font-size: 1.4rem;color: #162a72;padding: 6px 6px; border-radius: 50%;"></i>01245201083</p>
-        
-      </div>
+          <div class="col-md-3">
+            <br />
+            <br />
+            <p>
+              <i
+                class="fas fa-envelope me-2"
+                style="
+                  background-color: white;
+                  font-size: 1.4rem;
+                  color: #162a72;
+                  padding: 6px 6px;
+                  border-radius: 50%;
+                "
+              ></i
+              >admin@baktutors.co.uk
+            </p>
+            <p>
+              <i
+                class="fas fa-map-marker-alt me-2"
+                style="
+                  background-color: white;
+                  font-size: 1.4rem;
+                  color: #162a72;
+                  padding: 5px 8px;
+                  border-radius: 50%;
+                "
+              ></i
+              >39 Moulsham Street, Chelmsford, Essex CM2 0HY
+            </p>
+          </div>
 
-      <div class="col-md-3">
-        <br>
-        <br>
-        <p><i class="fas fa-envelope me-2" style="background-color: white;font-size: 1.4rem;color: #162a72;padding: 6px 6px; border-radius: 50%;"></i>admin@baktutors.co.uk</p>
-        <p><i class="fas fa-map-marker-alt me-2" style="background-color: white;font-size: 1.4rem;color: #162a72;padding: 5px 8px; border-radius: 50%;"></i>39 Moulsham Street, Chelmsford, Essex CM2 0HY</p>
-      </div>
+          <!-- Connect With Us -->
+          <div class="col-md-3 ">
+            <h6 class="fw-bold">Connect With Us!</h6>
+            <div class="d-flex">
+              <a href="#" class="me-3 text-white "
+                ><i
+                  class="fab fa-facebook-f connect"
+                  style="
+                    height: 40px;
+                    width: 40px;
+                    font-size: 2rem;
+                    padding: 5px 10px;
+                    border-radius: 6px;
+                  "
+                ></i
+              ></a>
+              <a href="#" class="me-3 text-white"
+                ><i
+                  class="fab fa-youtube connect"
+                  style="
+                    height: 40px;
+                    width: 40px;
+                    font-size: 2rem;
+                    padding: 4px 2px;
+                    border-radius: 6px;
+                    
+                  "
+                ></i
+              ></a>
+              <a href="#" class="me-3 text-white"
+                ><i
+                  class="fab fa-instagram connect"
+                  style="
+                    height: 40px;
+                    width: 40px;
+                    font-size: 2rem;
+                    padding: 4px 6px;
+                    border-radius: 6px;
+                  "
+                ></i
+              ></a>
+              <a href="#" class="me-3 text-white"
+                ><i
+                  class="fab fa-linkedin-in connect"
+                  style="
+                    height: 40px;
+                    width: 40px;
+                    font-size: 2rem;
+                    padding: 5px 6px;
+                    border-radius: 6px;
+                  "
+                ></i
+              ></a>
+              <a href="#" class="me-3 text-white"
+                ><i
+                  class="fab fa-twitter connect"
+                  style="
+                    height: 40px;
+                    width: 40px;
+                    font-size: 2rem;
+                    padding: 5px 6px;
+                    border-radius: 6px;
+                  "
+                ></i
+              ></a>
+            </div>
+          </div>
 
-      <!-- Connect With Us -->
-      <div class="col-md-3">
-        <h6 class="fw-bold">Connect With Us!</h6>
-        <div class="d-flex">
-          <a href="#" class="me-3 text-white" ><i class="fab fa-facebook-f" style="height: 40px; width: 40px; background-color: #ff9900; font-size: 2rem;padding:5px 10px; border-radius: 6px;"></i></a>
-          <a href="#" class="me-3 text-white"><i class="fab fa-youtube" style="height: 40px; width: 40px; background-color: #4a00b1; font-size: 2rem;padding:4px 2px; border-radius: 6px;"></i></a>
-          <a href="#" class="me-3 text-white"><i class="fab fa-instagram" style="height: 40px; width: 40px; background-color: #4a00b1; font-size: 2rem;padding:4px 6px; border-radius: 6px;"></i></a>
-          <a href="#" class="me-3 text-white"><i class="fab fa-linkedin-in"style="height: 40px; width: 40px; background-color: #4a00b1; font-size: 2rem;padding:5px 6px; border-radius: 6px;"></i></a>
-          <a href="#" class="me-3 text-white"><i class="fab fa-twitter" style="height: 40px; width: 40px; background-color: #4a00b1; font-size: 2rem;padding:5px 6px; border-radius: 6px;"></i></a>
+          <!-- Logo -->
+          <div class="col-md-3 text-center">
+            <img
+              src="crop.png"
+              alt="Bak Tutors Hub Logo"
+              class="img-fluid"
+              style="max-height: 140px"
+            />
+          </div>
+        </div>
+
+        <div class="text-center pb-3 w-100">
+          <div style="height: 2px; width: 100%; background-color: #ff9900;" class="mb-2"></div>
+          <p class="mb-0 p-3">
+            &copy; 2025 Bak Tutors Hub | All rights reserved. A subsidiary of Science Clinic Private Tutors Registration 10920060
+          </p>
         </div>
       </div>
-
-      <!-- Logo -->
-      <div class="col-md-3 text-center">
-        <img src="crop.png" alt="Bak Tutors Hub Logo" class="img-fluid" style="max-height: 140px;">
-      </div>
-    </div>
-
-
-    <div class="text-center pb-3 w-100">
-      <hr>
-      <p class="mb-0 p-3">&copy; 2025 Bak Tutors Hub | All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-
-
-
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -2407,32 +2833,31 @@
     </script>
 
     <script>
-  $(document).ready(function () {
-    $('.testimonial-slider').slick({
-      dots: true,
-      arrows: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 3, // default for large screens
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 992, // medium screens
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 768, // small screens
-          settings: {
-            slidesToShow: 1,
-          }
-        }
-      ]
-    });
-  });
-</script>
-
+      $(document).ready(function () {
+        $(".testimonial-slider").slick({
+          dots: true,
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3, // default for large screens
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 992, // medium screens
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768, // small screens
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
 
     <script>
       // JavaScript for smooth infinite scroll in the second carousel
