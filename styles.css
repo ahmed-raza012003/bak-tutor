@@ -20,6 +20,10 @@
   overflow: hidden;
 }
 
+.bg2{
+  margin-top:70px;
+}
+
 .letter-animate {
   display: flex;
   flex-wrap: wrap; /* allows wrapping on small screens */
@@ -391,6 +395,9 @@
   }
   .bg-hero {
   min-height: 100vh;
+}
+  .bg2{
+  margin-top:10px;
 }
 }
 
