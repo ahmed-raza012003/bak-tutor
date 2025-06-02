@@ -389,6 +389,9 @@
   .slick-next {
     display: none !important;
   }
+  .bg-hero {
+  min-height: 100vh;
+}
 }
 
 .main-title {
