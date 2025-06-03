@@ -261,7 +261,7 @@
   transform: translateY(-10px);
     background:var(--primary-color);
     color: white;
-    border: 3px solid #ff6600;
+    border: 3px solid #ffffff;
 
 }
 
@@ -812,7 +812,7 @@
 }
 
 .section-subtitle {
-  color: #6c757d;
+  color: #000000;
   font-size: 1.1rem;
   margin-bottom: 4rem;
 }
@@ -835,7 +835,7 @@
 
 .tutor-card:hover{
   cursor: pointer;
-  transform: translateY(-10px);
+  transform: translateY(-0px);
 }
 
 .tutor-card .tutor-image {
@@ -941,7 +941,7 @@
 }
 
 .cta-text {
-  color: #6c757d;
+  color: #000000;
   font-size: 1rem;
   margin: 3rem 0 2rem 0;
 }

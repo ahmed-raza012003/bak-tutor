@@ -42,80 +42,85 @@
 
     <style>
       /* Base arrow styles */
-.slick-prev,
-.slick-next {
-  width: 45px;
-  height: 45px;
-  z-index: 999;
-  background-color: #fff5f5;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  
-}
+      .slick-prev,
+      .slick-next {
+        width: 45px;
+        height: 45px;
+        z-index: 999;
+        background-color: #fff5f5;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
 
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: #e0e0e0;
-  color: white;
-  
-}
+      .slick-prev:hover,
+      .slick-next:hover {
+        background-color: #e0e0e0;
+        color: white;
+      }
 
-/* Arrow icons */
-.slick-prev::before,
-.slick-next::before {
-  font-size: 24px;
-  color: #ff6600;
-  opacity: 1;
-  transition: color 0.3s ease;
-}
+      /* Arrow icons */
+      .slick-prev::before,
+      .slick-next::before {
+        font-size: 24px;
+        color: #ff6600;
+        opacity: 1;
+        transition: color 0.3s ease;
+      }
 
-.slick-prev:hover::before,
-.slick-next:hover::before {
-  color: white;
-}
+      .slick-prev:hover::before,
+      .slick-next:hover::before {
+        color: white;
+      }
 
-/* Positioning */
-.slick-prev {
-  left: -25px;
-}
-.slick-next {
-  right: -25px;
-}
+      /* Positioning */
+      .slick-prev {
+        left: -25px;
+      }
+      .slick-next {
+        right: -25px;
+      }
 
-/* Apply to all nav links */
-.nav-link {
-  position: relative;
-  color: black;
-  transition: color 0.3s ease;
-}
+      /* Apply to all nav links */
+      .nav-link {
+        position: relative;
+        color: black;
+        transition: color 0.3s ease;
+      }
 
-/* Hover color for all nav links */
-.nav-link:hover {
-  color: orange;
-}
+      /* Hover color for all nav links */
+      .nav-link:hover {
+        color: orange;
+      }
 
-/* Sliding underline only for non-dropdown nav links */
-.navbar-nav > .nav-item:not(.dropdown) > .nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background-color: orange;
-  transition: width 0.3s ease;
-}
+      /* Sliding underline only for non-dropdown nav links */
+      .navbar-nav > .nav-item:not(.dropdown) > .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: orange;
+        transition: width 0.3s ease;
+      }
 
-/* Animate underline on hover (only for non-dropdowns) */
-.navbar-nav > .nav-item:not(.dropdown) > .nav-link:hover::after {
-  width: 100%;
-}
+      /* Animate underline on hover (only for non-dropdowns) */
+      .navbar-nav > .nav-item:not(.dropdown) > .nav-link:hover::after {
+        width: 100%;
+      }
 
+      .call-button {
+        background-color: #162a72;
+        color: white;
+      }
 
-
+      .call-button:hover {
+        background-color: #ff6600;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -212,7 +217,10 @@
       class="navbar navbar-expand-lg bg-white border-top shadow-sm py-2 px-1"
     >
       <div class="container-fluid w-100">
-        <a class="navbar-brand" href="#">
+        <a
+          class="navbar-brand"
+          href="https://ahmed-raza012003.github.io/bak-tutor/"
+        >
           <img
             src="Logo.png"
             alt="BAK Tutors Hub"
@@ -320,7 +328,9 @@
             <li class="nav-item">
               <a class="nav-link mx-2" href="#">FIND A TUTOR</a>
             </li>
-            <li class="nav-item"><a class="nav-link mx-2" href="#">ABOUT</a></li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">ABOUT</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle mx-2"
@@ -472,8 +482,8 @@
           <div
             class="d-flex justify-content-center mb-2 gap-5 position-relative z-2"
           >
-            <button class="tab-btn active-btn">In-Person</button>
-            <button class="tab-btn">Online</button>
+            <button class="tab-btn">In-Person</button>
+            <button class="tab-btn active-btn">Online</button>
           </div>
 
           <form
@@ -497,13 +507,16 @@
               </select>
             </div>
             <div class="col-12 col-md-3 col-sm-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Post Code"
-                required
-              />
+              <div id="postcode-wrapper">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Post Code"
+                  required
+                />
+              </div>
             </div>
+
             <div class="col-12 col-md-3 col-sm-3">
               <button
                 type="submit"
@@ -1554,7 +1567,7 @@
               </div>
             </div>
           </div>
-           <div class="col-12 col-md-4 mx-2">
+          <div class="col-12 col-md-4 mx-2">
             <div class="blog-card">
               <img
                 src="s3.jpg"
@@ -1573,7 +1586,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </section>
@@ -1627,16 +1639,16 @@
               <div class="tutor-image-left">
                 <img src="h1.jpg" alt="Tutor Image" class="img-fluid rounded" />
                 <div class="call-icons">
-                  <button class="btn btn-danger rounded-circle">
+                  <button class="btn call-button rounded-circle">
                     <i class="fas fa-phone"></i>
                   </button>
-                  <button class="btn btn-orange rounded-circle">
+                  <button class="btn call-button rounded-circle">
                     <i class="fas fa-user-plus"></i>
                   </button>
-                  <button class="btn btn-orange rounded-circle">
+                  <button class="btn call-button rounded-circle">
                     <i class="fas fa-video"></i>
                   </button>
-                  <button class="btn btn-orange rounded-circle">
+                  <button class="btn call-button rounded-circle">
                     <i class="fas fa-comment"></i>
                   </button>
                 </div>
@@ -2730,7 +2742,7 @@
 
           <div class="col-md-5">
             <br />
-            
+
             <p>
               <i
                 class="fas fa-envelope me-2"
@@ -2744,7 +2756,7 @@
               ></i
               >admin@baktutors.co.uk
             </p>
-           
+
             <p class="hanging-indent">
               <i
                 class="fas fa-map-marker-alt me-2"
@@ -2829,12 +2841,17 @@
 
           <!-- Logo -->
           <div class="col-md-2 text-center">
-            <img
-              src="crop.png"
-              alt="Bak Tutors Hub Logo"
-              class="img-fluid"
-              style="max-height: 140px"
-            />
+            <a
+              class="navbar-brand"
+              href="https://ahmed-raza012003.github.io/bak-tutor/"
+            >
+              <img
+                src="crop.png"
+                alt="BAK Tutors Hub"
+                class="img-fluid"
+                style="max-height: 140px"
+              />
+            </a>
           </div>
         </div>
 
@@ -2910,51 +2927,49 @@
         },
       });
     </script>
-   
 
     <script>
-  $(document).ready(function () {
-    $(".subjects-slider").slick({
-      dots: false,
-      infinite: true,
-      speed: 8000, // High speed for slow continuous movement
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 0, // Start immediately
-      cssEase: 'linear', // Linear easing for smooth continuous effect
-      pauseOnHover: false,
-      arrows:false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-          },
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-          },
-        },
-      ],
-    });
-  });
-</script>
-
+      $(document).ready(function () {
+        $(".subjects-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 8000, // High speed for slow continuous movement
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 0, // Start immediately
+          cssEase: "linear", // Linear easing for smooth continuous effect
+          pauseOnHover: false,
+          arrows: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
 
     <script>
       $(document).ready(function () {
@@ -3050,7 +3065,7 @@
           autoplay: true,
           autoplaySpeed: 4000,
           pauseOnHover: true,
-          arrows:false,
+          arrows: false,
           responsive: [
             {
               breakpoint: 1024,
@@ -3064,7 +3079,6 @@
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                
               },
             },
             {
@@ -3081,41 +3095,36 @@
       });
     </script>
 
-   
-
     <script>
       $(document).ready(function () {
-  $(".testimonial-slider").on("init", function () {
-    $(window).trigger("resize");
-  });
+        $(".testimonial-slider").on("init", function () {
+          $(window).trigger("resize");
+        });
 
-  $(".testimonial-slider").slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-});
-
+        $(".testimonial-slider").slick({
+          dots: false,
+          arrows: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
     </script>
-
-    
 
     <script>
       // JavaScript for smooth infinite scroll in the second carousel
@@ -3224,14 +3233,33 @@
       });
     </script>
     <script>
-      const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const postcodeWrapper = document.getElementById("postcode-wrapper");
 
-      tabButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          tabButtons.forEach((btn) => btn.classList.remove("active-btn"));
-          button.classList.add("active-btn");
-        });
-      });
-    </script>
+  function updateUI(selectedType) {
+    tabButtons.forEach((btn) => btn.classList.remove("active-btn"));
+
+    if (selectedType === "In-Person") {
+      tabButtons[0].classList.add("active-btn");
+      postcodeWrapper.style.display = "block";
+    } else {
+      tabButtons[1].classList.add("active-btn");
+      postcodeWrapper.style.display = "none";
+    }
+  }
+
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const selected = button.textContent.trim();
+      updateUI(selected);
+    });
+  });
+
+  // Default to Online on page load
+  window.addEventListener("DOMContentLoaded", () => {
+    updateUI("Online");
+  });
+</script>
+
   </body>
 </html>
