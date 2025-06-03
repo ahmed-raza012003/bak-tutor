@@ -486,7 +486,7 @@
             <button class="tab-btn active-btn">Online</button>
           </div>
 
-          <form
+          <!-- <form
             class="row g-3 align-items-center justify-content-center position-relative z-2"
           >
             <div class="col-12 col-md-3 col-sm-3">
@@ -524,6 +524,47 @@
               >
                 Book Now
               </button>
+            </div>
+          </form> -->
+          <form
+            class="row g-3 align-items-center justify-content-center position-relative z-2"
+          >
+            <div
+              class="form-fields d-flex flex-wrap justify-content-center w-100 gap-3 align-items-center"
+            >
+              <div class="subject-field flex-grow-1">
+                <select class="form-select" required>
+                  <option value="" disabled selected>Subject</option>
+                  <option value="Math">Math</option>
+                  <option value="English">English</option>
+                  <option value="Science">Science</option>
+                </select>
+              </div>
+              <div class="level-field flex-grow-1">
+                <select class="form-select" required>
+                  <option value="" disabled selected>Teaching Level</option>
+                  <option value="Primary">Primary</option>
+                  <option value="Secondary">Secondary</option>
+                  <option value="GCSE">GCSE</option>
+                  <option value="A-Level">A-Level</option>
+                </select>
+              </div>
+              <div id="postcode-wrapper" class="postcode-field">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Post Code"
+                  required
+                />
+              </div>
+              <div class="submit-button">
+                <button
+                  type="submit"
+                  class="btn btn-warning text-white w-100 px-5 py-2"
+                >
+                  Book Now
+                </button>
+              </div>
             </div>
           </form>
         </div>
@@ -3233,33 +3274,32 @@
       });
     </script>
     <script>
-  const tabButtons = document.querySelectorAll(".tab-btn");
-  const postcodeWrapper = document.getElementById("postcode-wrapper");
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const postcodeWrapper = document.getElementById("postcode-wrapper");
 
-  function updateUI(selectedType) {
-    tabButtons.forEach((btn) => btn.classList.remove("active-btn"));
+      function updateUI(selectedType) {
+        tabButtons.forEach((btn) => btn.classList.remove("active-btn"));
 
-    if (selectedType === "In-Person") {
-      tabButtons[0].classList.add("active-btn");
-      postcodeWrapper.style.display = "block";
-    } else {
-      tabButtons[1].classList.add("active-btn");
-      postcodeWrapper.style.display = "none";
-    }
-  }
+        if (selectedType === "In-Person") {
+          tabButtons[0].classList.add("active-btn");
+          postcodeWrapper.style.display = "block";
+        } else {
+          tabButtons[1].classList.add("active-btn");
+          postcodeWrapper.style.display = "none";
+        }
+      }
 
-  tabButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const selected = button.textContent.trim();
-      updateUI(selected);
-    });
-  });
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const selected = button.textContent.trim();
+          updateUI(selected);
+        });
+      });
 
-  // Default to Online on page load
-  window.addEventListener("DOMContentLoaded", () => {
-    updateUI("Online");
-  });
-</script>
-
+      // Default to Online on page load
+      window.addEventListener("DOMContentLoaded", () => {
+        updateUI("Online");
+      });
+    </script>
   </body>
 </html>
