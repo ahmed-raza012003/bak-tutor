@@ -85,6 +85,37 @@
   right: -25px;
 }
 
+/* Apply to all nav links */
+.nav-link {
+  position: relative;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/* Hover color for all nav links */
+.nav-link:hover {
+  color: orange;
+}
+
+/* Sliding underline only for non-dropdown nav links */
+.navbar-nav > .nav-item:not(.dropdown) > .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.3s ease;
+}
+
+/* Animate underline on hover (only for non-dropdowns) */
+.navbar-nav > .nav-item:not(.dropdown) > .nav-link:hover::after {
+  width: 100%;
+}
+
+
+
     </style>
   </head>
   <body>
