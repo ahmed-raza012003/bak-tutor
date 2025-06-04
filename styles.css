@@ -279,21 +279,22 @@
 .subject-card {
   background: rgb(234, 234, 234);
   border-radius: 5px;
-  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
   margin: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
   border: none;
+
 }
 
 .subject-card:hover {
-  transform: translateY(-5px);
+ 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.card-content1 {
+/* .card-content1 {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 25px;
   min-height: 100px;
   min-width: 280px;
@@ -315,13 +316,60 @@
 
 .card-text {
   flex: 1;
+} */
+
+
+.card-content1 {
+  display: flex;
+  align-items: center;
+  justify-content:start; 
+  padding: 25px;
+  min-height: 100px;
+  min-width: 290px;
+  /* width: 100%; */
 }
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0; 
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text {
+  /* margin-left: auto; */
+  margin-top: 12px;
+  width: 80%;
+
+}
+
 
 .card-title {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
   color: #2c3e50;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 576px) {
+
+  .card-icon{
+  
+  }
+
+  .card-text{
+
+  }
+
+  .card-title{
+    font-size: 2rem;
+  }
+
 }
 
 /* Subject-specific colors - removed as we're using images now */
@@ -374,7 +422,7 @@
 
   .card-icon {
     margin-right: 0;
-    margin-bottom: 15px;
+   
   }
 
   .slick-prev {
