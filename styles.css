@@ -1706,7 +1706,7 @@
 }
 
 .feature-box p {
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
 }
 
@@ -1723,7 +1723,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  font-size: 14px;
+  font-size: 16px;
   color: #333;
   gap: 15px;
 }
