@@ -165,6 +165,34 @@
       .phone-link:hover {
         color: tomato;
       }
+
+      .dropdown-large {
+        max-width: 600px;
+        width: 100%;
+      }
+      @media (min-width: 992px) {
+        .nav-item.dropdown:hover .dropdown-menu {
+          display: block;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .dropdown-large {
+          width: 600px;
+        }
+      }
+
+      /* Custom width for very small screens (e.g., smartphones) */
+      @media (max-width: 492px) {
+        .dropdown-large {
+          max-width: 300px;
+          width: 300px;
+        }
+      }
+
+      .dropdown-large .dropdown-item {
+        white-space: normal;
+      }
     </style>
   </head>
 
@@ -362,7 +390,7 @@
                 <li><a class="dropdown-item" href="#">Resource 1</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link mx-1 dropdown-toggle"
                 href="#"
@@ -373,7 +401,106 @@
                 <li><a class="dropdown-item" href="#">Math</a></li>
                 <li><a class="dropdown-item" href="#">English</a></li>
               </ul>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link mx-1 dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >TUTOR BY SUBJECT</a
+              >
+              <ul class="dropdown-menu dropdown-large p-3">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <li><a class="dropdown-item" href="#">GCSE Tutors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Accounting Tutors</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Arabic Tutors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Biology Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Business Studies Tutors</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Chemistry Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Computer Science Tutors</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Finance Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Chinese Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">A-Level Tutors</a>
+                    </li>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <li>
+                      <a class="dropdown-item" href="#">Economic Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">English Tutors</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">French Tutors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Geography Tutors</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">German Tutors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">History Tutors</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Law Tutors</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Mathematics Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Combined Science Tutors</a
+                      >
+                    </li>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <li>
+                      <a class="dropdown-item" href="#">11 Plus Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">KS2 and KS1 Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Physics Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Politics Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Psychology Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Religious Studies</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Science Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sociology Tutors</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Spanish Tutors</a>
+                    </li>
+                  </div>
+                </div>
+              </ul>
             </li>
+
             <li class="nav-item">
               <a class="nav-link mx-1" href="#">FIND A TUTOR</a>
             </li>
