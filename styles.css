@@ -359,11 +359,11 @@
 @media (max-width: 576px) {
 
   .card-icon{
-  
+  margin-top: 10px;
   }
 
   .card-text{
-
+    margin-top: 16px;
   }
 
   .card-title{
