@@ -848,6 +848,7 @@
   justify-content: center; /* Horizontally center */
   text-align: center;
   margin-top: -80px;
+  width: 100%;
 }
 
 .section-title {
@@ -867,47 +868,69 @@
   margin-bottom: 4rem;
 }
 
-.tutor-card {
-  background: transparent; /* remove background so image dominates */
+.tutor-slider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* optional, control container width */
+  margin: 0 auto;
+  background-color: rgba(255, 250, 240, 0);
+}
 
+
+.tutor-card {
+  background: none;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 0px;
+  /* padding: 100px; */
   border: none;
-
+  width: 280px;
   overflow: hidden;
   height: 300px;
-  position: relative; /* important for absolute child */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin: 0px 10px;
+  background-color: #ffffff00;
+    margin: -10px -5px;
+  
 }
 
-.tutor-card:hover{
+.tutor-card:hover {
   cursor: pointer;
-  transform: translateY(-0px);
+  
 }
 
 .tutor-card .tutor-image {
   overflow: hidden;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  height: 300px;
+
 }
 
 .tutor-card .tutor-image img {
   transition: transform 0.4s ease;
-  width: 100%;
-  height: 300px;
+  width: 280px;
+  height: 100%;
   object-fit: cover;
 }
+
+
 
 .tutor-card:hover .tutor-image img {
   transform: scale(1.1);
 }
 
 
+
+
 .tutor-level-card {
-  background: transparent; /* remove background so image dominates */
+  background: none; /* remove background so image dominates */
+
 
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
