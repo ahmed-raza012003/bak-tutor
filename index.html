@@ -84,6 +84,24 @@
         right: -25px;
       }
 
+
+      .navbar-nav{
+
+        width: 95%;
+        font-size: 2.5vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+      }
+
+      @media (max-width: 1405px){
+        .navbar-nav{
+          justify-content:start;
+        }
+
+      }
+
       @media (max-width: 768px) {
         .slick-prev {
         left: -5px;
@@ -91,6 +109,14 @@
 
       .slick-next {
         right: -5px;
+      }
+
+      .navbar-nav{
+
+        font-size: 14px;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+
       }
         
       }
@@ -383,7 +409,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <!-- Main Navigation Links -->
-          <ul class="navbar-nav ms-auto  d-flex flex-wrap  justify-content-between" style="width: 95%;font-size: 2.5vh;">
+          <ul class="navbar-nav ms-auto  ">
             <li class="nav-item">
               <a class="nav-link " href="#">BOOK STUDENTS</a>
             </li>
