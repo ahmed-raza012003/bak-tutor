@@ -84,6 +84,17 @@
         right: -25px;
       }
 
+      @media (max-width: 768px) {
+        .slick-prev {
+        left: -5px;
+      }
+
+      .slick-next {
+        right: -5px;
+      }
+        
+      }
+
       /* Apply to all nav links */
       .nav-link {
         position: relative;
@@ -372,7 +383,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <!-- Main Navigation Links -->
-          <ul class="navbar-nav ms-auto  d-flex  justify-content-between" style="width: 95%;font-size: 2.5vh;">
+          <ul class="navbar-nav ms-auto  d-flex flex-wrap  justify-content-between" style="width: 95%;font-size: 2.5vh;">
             <li class="nav-item">
               <a class="nav-link " href="#">BOOK STUDENTS</a>
             </li>
